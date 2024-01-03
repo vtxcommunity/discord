@@ -1,0 +1,533 @@
+<!DOCTYPE html><!-- Last Published: Thu Dec 21 2023 20:58:36 GMT+0000 (Coordinated Universal Time) --><html data-wf-domain="discord-2022.webflow.io" data-wf-page="65272890fd070a45d9fcf216" data-wf-site="6257adef93867e50d84d30e2">
+<!-- Mirrored from discord.com/gdc-2023 by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 02 Jan 2024 08:47:33 GMT -->
+<head><meta charset="utf-8"/><title>GDC 2023 | Discord</title><meta content="See what Discord is up to at the 2023 Game Developers Conference - join from anywhere, learn to build Discord apps, and check our GDC 2023 events!" name="description"/><meta content="GDC 2023 | Discord" property="og:title"/><meta content="See what Discord is up to at the 2023 Game Developers Conference - join from anywhere, learn to build Discord apps, and check our GDC 2023 events!" property="og:description"/><meta content="https://assets-global.website-files.com/6257adef93867e50d84d30e2/635a8ef575825f77a50d2ecf_Rebrand_LinkEmbeds_Landing.png" property="og:image"/><meta content="GDC 2023 | Discord" property="twitter:title"/><meta content="See what Discord is up to at the 2023 Game Developers Conference - join from anywhere, learn to build Discord apps, and check our GDC 2023 events!" property="twitter:description"/><meta content="https://assets-global.website-files.com/6257adef93867e50d84d30e2/635a8ef575825f77a50d2ecf_Rebrand_LinkEmbeds_Landing.png" property="twitter:image"/><meta property="og:type" content="website"/><meta content="summary_large_image" name="twitter:card"/><meta content="width=device-width, initial-scale=1" name="viewport"/><link href="../assets-global.website-files.com/6257adef93867e50d84d30e2/css/discord-2022.8f9fedb66.min.css" rel="stylesheet" type="text/css"/><link href="https://fonts.googleapis.com/" rel="preconnect"/><link href="https://fonts.gstatic.com/" rel="preconnect" crossorigin="anonymous"/><script src="../ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script><script type="text/javascript">WebFont.load({  google: {    families: ["Press Start 2P:regular:cyrillic,latin"]  }});</script><script type="text/javascript">!function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);</script><link href="../assets-global.website-files.com/6257adef93867e50d84d30e2/62fddf0fde45a8baedcc7ee5_847541504914fd33810e70a0ea73177e%20(2)-1.png" rel="shortcut icon" type="image/x-icon"/><link href="https://assets-global.website-files.com/6257adef93867e50d84d30e2/6266bc493fb42d4e27bb8393_847541504914fd33810e70a0ea73177e.ico" rel="apple-touch-icon"/><script src="../ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="../global.localizecdn.com/localize.js"></script>
+<script src="webflow-scripts/head.js"></script>
+
+<style>
+.language{
+    display:flex;
+    user-select: none;
+}
+.language .lang-container {
+    position: relative;
+}
+
+.language .lang-selector-container {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.language .locale-container{
+    display: flex;
+    align-items: center;
+}
+
+.language .flag {
+    width: 24px;
+    height: 16px;
+    margin-right: 8px;
+}
+
+.language .selector-language-name{
+    color: #fff;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.language .arrow-icon{
+    padding-left: 8px;
+}
+
+.language .lang-dropdown-container {
+    z-index: 10;
+    bottom: 100%;
+    margin-bottom: 8px;
+    position: absolute;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 1px 1px rgb(0 0 0 / 10%);
+    overflow: hidden;
+    display: none;
+}
+
+.language .lang-dropdown {
+    max-height: 320px;
+    min-width: 150px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    overscroll-behavior: contain;
+}
+
+.language .dropdown-item{
+    padding: 8px;
+}
+
+.language .dropdown-clickable{
+    cursor: pointer;
+}
+
+.language .dropdown-language-name{
+    color: #23272a;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.flag-ru{
+    content:url("../assets-global.website-files.com/6257adef93867e50d84d30e2/62cb46f39e6ac4c46ce39566_ru.png");
+}
+
+.flag-bg{
+    content:url("../assets-global.website-files.com/6257adef93867e50d84d30e2/6257c2a1e7544e303083b2b1_bolg.png");
+}
+.flag-cs{
+    content:url("../assets-global.website-files.com/6257adef93867e50d84d30e2/62cb46f1254305732a01676d_cs.png");
+}
+.flag-da{
+    content:url("../assets-global.website-files.com/6257adef93867e50d84d30e2/62cb46f16128094022db6768_da.png");
+}
+.flag-de{
+    content:url("../assets-global.website-files.com/6257adef93867e50d84d30e2/62cb46f1c50496ce73c40d99_de.png");
+}
+.flag-en-GB {
+    content:url("https://assets-global.website-files.com/6257adef93867e50d84d30e2/62d01c2078d11b68a1633276_Rectangle 1 (3).svg");
+}
+.flag-el{
+    content:url("../assets-global.website-files.com/6257adef93867e50d84d30e2/62cb46f17c26b5fe5a53876f_el.png");
+}
+.flag-en-US{
+    content:url("../assets-global.website-files.com/6257adef93867e50d84d30e2/6257bf8b5ba300233705a542_en.png");
+}
+.flag-en{
+    content:url("../assets-global.website-files.com/6257adef93867e50d84d30e2/6257bf8b5ba300233705a542_en.png");
+}
+.flag-es{
+    content:url("../assets-global.website-files.com/6257adef93867e50d84d30e2/62cb46f14edab1b0029593fc_es-ES.png");
+}
+.flag-fi{
+    content:url("../assets-global.website-files.com/6257adef93867e50d84d30e2/62cb46f1921c0cf82fc59da7_fi.png");
+}
+.flag-fr{
+    content:url("../assets-global.website-files.com/6257adef93867e50d84d30e2/62cb46f1544a7ab7c66e9ccb_fr.png");
+}
+.flag-hi{
+    content:url("../assets-global.website-files.com/6257adef93867e50d84d30e2/62cb46f13fcb6e76c05b504e_hi.png");
+}
+.flag-hr{
+    content:url("../assets-global.website-files.com/6257adef93867e50d84d30e2/62cb46f1aeebe9064763c90c_hr.png");
+}
+.flag-hu{
+    content:url("../assets-global.website-files.com/6257adef93867e50d84d30e2/62cb46f19e6ac41dcce39561_hu.png");
+}
+.flag-it{
+    content:url("../assets-global.website-files.com/6257adef93867e50d84d30e2/62cb46f1bd099a25f8f77ea4_it.png");
+}
+.flag-ja{
+    content:url("../assets-global.website-files.com/6257adef93867e50d84d30e2/62cb46f1e819841940bec47d_ja.png");
+}
+.flag-ko{
+    content:url("../assets-global.website-files.com/6257adef93867e50d84d30e2/62cb46f125430509b9016776_ko.png");
+}
+.flag-lt{
+    content:url("../assets-global.website-files.com/6257adef93867e50d84d30e2/62cb46f14edab152b8959405_lt.png");
+}
+.flag-nl{
+    content:url("../assets-global.website-files.com/6257adef93867e50d84d30e2/62cb46f3e00ff80959abff2a_nl.png");
+}
+.flag-no{
+    content:url("../assets-global.website-files.com/6257adef93867e50d84d30e2/62cb46f37c26b5e22453877d_no.png");
+}
+.flag-pl{
+    content:url("../assets-global.website-files.com/6257adef93867e50d84d30e2/62cb46f3c504963019c40db7_pl.png");
+}
+.flag-pt-BR{
+    content:url("../assets-global.website-files.com/6257adef93867e50d84d30e2/62cb46f3d809bc2503e62bec_pt-BR.png");
+}
+.flag-ro{
+    content:url("../assets-global.website-files.com/6257adef93867e50d84d30e2/62cb46f36e94d725ce411ab6_ro.png");
+}
+.flag-sv{
+    content:url("../assets-global.website-files.com/6257adef93867e50d84d30e2/62cb46f49e6ac47674e39567_sv-SE.png");
+}
+.flag-th{
+    content:url("../assets-global.website-files.com/6257adef93867e50d84d30e2/62cb46f465c529bf26e211a1_th.png");
+}
+.flag-tr{
+    content:url("../assets-global.website-files.com/6257adef93867e50d84d30e2/62cb46f4e819848178bec4d1_tr.png");
+}
+.flag-uk{
+    content:url("../assets-global.website-files.com/6257adef93867e50d84d30e2/62cb46f37c26b54f6a53877f_uk.png");
+}
+.flag-vi{
+    content:url("../assets-global.website-files.com/6257adef93867e50d84d30e2/62cb46f4e819840d89bec4d2_vi.png");
+}
+.flag-zh-Hans{
+    content:url("../assets-global.website-files.com/6257adef93867e50d84d30e2/62cb46f49e6ac45f35e39568_zh-CN.png");
+}
+.flag-zh-TW{
+    content:url("../assets-global.website-files.com/6257adef93867e50d84d30e2/62cb46f33fcb6ea5c95b5069_zh-TW.png");
+}
+</style>
+
+
+<style>
+  
+  .nav-bar-hack {
+  	bottom: 0px !important;
+    height: auto !important;
+  }
+  
+  body a.w-webflow-badge {
+    display: none !important;
+  }
+  
+  body {
+  	text-rendering: optimizeLegibility;
+  }
+  
+  @media screen and (max-width: 476px) {
+    .hide-on-mobile {
+      display: none;
+    }
+  }
+  
+  .hr-style {
+  border: 0;
+  height: 8px;
+  background-color: #F0F0F0;
+  margin: 20px 0px;
+  }
+  
+  .BlogBodyQuote {
+  grid-column: 2/-1;
+  font-size: 24px;
+  line-height: 36px;
+  padding: 0px 0px 15px 40px;
+  font-style: italic;
+  margin: 40px 0px 50px 0px;
+}
+
+.quote-text {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.quote-icon {
+  position: relative;
+  top: 16px;
+}
+
+footer.quote-footer {
+  font-size: 16px;
+  margin-top: 20px;
+  font-style: normal;
+}
+</style>
+
+
+</head><body class="body"><div class="overflow"><div class="nav-blue"><div data-animation="over-right" class="navbar w-nav" data-easing2="ease" data-easing="ease" data-collapse="medium" data-w-id="11496e0f-7a6b-6414-d08d-3c86f0aee120" role="banner" data-duration="400" data-doc-height="1"><div class="container-1180px flex"><a href="index.html" data-track-nav="landing" class="w-nav-brand"><img src="https://assets-global.website-files.com/6257adef93867e50d84d30e2/6257d23c5fb25be7e0b6e220_Open Source Projects _ Discord-7.svg" loading="lazy" alt="" class="discord"/><img src="https://assets-global.website-files.com/6257adef93867e50d84d30e2/6257d377b13ff484638adb92_svg7.svg" loading="lazy" alt="" class="discord-black"/><img src="../assets-global.website-files.com/6257adef93867e50d84d30e2/625eb604bb8605784489d361_Discord-Logo%2bWordmark-Color%20(1).png" loading="lazy" alt="" class="discord-blue"/></a><nav role="navigation" class="nav-menu w-nav-menu"><div class="invert"><img src="https://assets-global.website-files.com/6257adef93867e50d84d30e2/6257d23c5fb25be7e0b6e220_Open Source Projects _ Discord-7.svg" loading="lazy" alt="" class="discord2"/></div><div class="div-block-4"><a href="download.html" data-track-nav="download" class="nav-link w-nav-link">Download</a><a href="nitro.html" data-track-nav="nitro" class="nav-link w-nav-link">Nitro</a><a href="servers.html" data-track-nav="safety" class="nav-link mobile-hide w-nav-link">Discover</a><a href="safety.html" data-track-nav="safety" class="nav-link mobile-hide w-nav-link">Safety</a><div data-w-id="c36f0e26-d62e-952f-a4f7-a242f3e01d91" class="nav-link-arrow">Safety</div><a href="https://support.discord.com/hc" data-track-nav="support" class="nav-link w-nav-link">Support</a><a href="blog.html" data-track-nav="blog" class="nav-link w-nav-link">Blog</a><a href="careers.html" data-track-nav="jobs" class="nav-link w-nav-link">Careers</a></div><div class="div-block-absol"><a href="https://dl.discordapp.net/distro/app/stable/win/x86/1.0.9028/DiscordSetup.exe" class="button-blue-menu download-button w-inline-block"><img src="https://assets-global.website-files.com/6257adef93867e50d84d30e2/6259470cb8f7d17c38408689_Frame.svg" loading="lazy" alt="" class="img-8px"/><div class="new-dark-button download-button mobile">Download</div></a></div><img src="https://assets-global.website-files.com/6257adef93867e50d84d30e2/62594869635af64d3e8a9a63_Frame.svg" loading="lazy" alt="" class="x"/><div class="div-block-nav"><div data-w-id="c36f0e26-d62e-952f-a4f7-a242f3e01da2" class="p-16px-black2 _400">Back</div><div class="paragraph-20px-top16px _500">Safety Center</div><a href="safety.html" class="nav-link">Overview</a><div class="line-grey"></div><div class="paragraph-20px-top16px _500">Controlling Your Experience</div><a href="safety/360043857751-four-steps-to-a-super-safe-account.html" class="link-grey-16px">Four steps to a super safe account</a><a href="safety/360043653152-four-steps-to-a-super-safe-server.html" class="link-grey-16px">Four steps to a super safe server</a><a href="safety/360044103531-role-of-administrators-and-moderators-on-discord.html" class="link-grey-16px">Role of administrators and moderators on Discord</a><a href="safety/360044103651-reporting-abusive-behavior-to-discord.html" class="link-grey-16px">Reporting problems to Discord</a><a href="safety/360044103771-mental-health-on-discord.html" class="link-grey-16px">Mental health on Discord</a><a href="safety/360043653552-age-restricted-content-on-discord.html" class="link-grey-16px">Age-Restricted Content on Discord</a><a href="safety/360044104071-tips-against-spam-and-hacking.html" class="link-grey-16px">Tips against spam and hacking</a><div class="line-grey"></div><div class="paragraph-20px-top16px _500">Parents &amp; Educators</div><a href="safety/360044149331-what-is-discord.html" class="link-grey-16px">What is Discord?</a><a href="safety/360043700632-discords-commitment-to-a-safe-and-trusted-experience.html" class="link-grey-16px">Discord&#x27;s commitment to a safe and trusted experience</a><a href="safety/360044153831-helping-your-teen-stay-safe-on-discord.html" class="link-grey-16px">Helping your teen stay safe on Discord</a><a href="safety/360044154611-talking-about-online-safety-with-your-teen.html" class="link-grey-16px">Talking about online safety with your teen</a><a href="safety/360044149591-answering-parents-and-educators-top-questions.html" class="link-grey-16px">Answering parents&#x27; and educators&#x27; top questions</a><a href="safety/360044154771-if-your-teen-encounters-an-issue.html" class="link-grey-16px">If your teen encounters an issue</a><a href="safety/360057166133-working-with-caru-to-protect-users-on-discord.html" class="link-grey-16px">Working with CARU to protect users on Discord</a><div class="line-grey"></div><div class="paragraph-20px-top16px _500">How We Enforce Rules</div><a href="safety/360043709612-our-policies.html" class="link-grey-16px">Our policies</a><a href="safety/360043712132-how-we-investigate.html" class="link-grey-16px">How we investigate</a><a href="safety/360044159011-what-actions-we-take.html" class="link-grey-16px">What actions we take</a><a href="safety/360043712172-how-you-can-appeal-our-actions.html" class="link-grey-16px">How you can appeal our actions</a><a href="safety/360043712232-discords-transparency-report.html" class="link-grey-16px">Discord&#x27;s Transparency Reports</a><a href="safety/360044157931-working-with-law-enforcement.html" class="link-grey-16px">Working with law enforcement</a></div><div class="div-block-nav-2"><div data-w-id="c36f0e26-d62e-952f-a4f7-a242f3e01dda" class="p-16px-black2 _400">Back</div><div class="paragraph-20px-top16px _500">Moderator Academy</div><a href="safety-library.html" class="nav-link">Overview</a><div class="line-grey"></div><div class="paragraph-20px-top16px _500">Basics</div><a href="community-moderation-safety.html" class="link-grey-16px">100: An Intro to the DMA</a><a href="community/basic-channel-setup.html" class="link-grey-16px">103: Basic Channel Setup</a><a href="safety/360044103651-reporting-abusive-behavior-to-discord.html" class="link-grey-16px">104: How To Report Content To Discord</a><a href="community/moderator-etiquette-for-your-discord-server.html" class="link-grey-16px">110: Moderator Etiquette</a><a href="community/your-responsibilities-as-a-discord-moderator-discord.html" class="link-grey-16px">111: Your Responsibilities as a Moderator</a><a href="community-moderation-safety.html" class="link-grey-16px">151: An Intro to the Moderator Ecosystem</a><div class="line-grey"></div><div class="paragraph-20px-top16px _500">Setup and Function</div><a href="community/permissions-on-discord-discord.html" class="link-grey-16px">201: Permissions on Discord</a><a href="community/handling-difficult-scenarios-as-an-admin-discord.html" class="link-grey-16px">202: Handling Difficult Scenarios</a><a href="community/developing-server-rules.html" class="link-grey-16px">203: Developing Server Rules</a><a href="community/ban-appeals.html" class="link-grey-16px">204: Ban Appeals</a><a href="community/utilizing-role-colors.html" class="link-grey-16px">205: Utilizing Role Colors</a><a href="community/best-practices-for-reporting-tools.html" class="link-grey-16px">206: Best Practices for Reporting Tools</a><a href="community/server-information-and-announcement-channels.html" class="link-grey-16px">207: Server Information and Announcement Channels</a><a href="community/channel-categories-and-names.html" class="link-grey-16px">208: Channel Categories and Names</a><a href="community/moderator-recruitment.html" class="link-grey-16px">210: Moderator Recruitment</a><a href="safety/creating-moderation-team-channels.html" class="link-grey-16px">211: Creating Moderation Team Channels</a><a href="safety/fundamentals-of-family-friendly-servers.html" class="link-grey-16px">231: Fundamentals of Family-Friendly Servers</a><a href="safety/securing-your-discord-account.html" class="link-grey-16px">241: Securing Your Discord Account</a><div class="line-grey"></div><div class="paragraph-20px-top16px _500">Advanced Community Management</div><a href="moderation/1500000177981-301-implementing-verification-gates.html" class="link-grey-16px">301: Implementing Verification Gates</a><a href="safety/developing-moderator-guidelines-copy.html" class="link-grey-16px">302: Developing Moderator Guidelines</a><a href="safety/facilitating-positive-environments.html" class="link-grey-16px">303: Facilitating Positive Environments</a><a href="community/moderating-safely-and-securely-discord.html" class="link-grey-16px">304: Moderating Safely and Securely</a><a href="safety/managing-moderation-teams.html" class="link-grey-16px">310: Managing Moderation Teams</a><a href="safety/understanding-and-avoiding-moderator-burnout.html" class="link-grey-16px">311: Understanding and Avoiding Moderator Burnout</a><a href="safety/internal-conflict-resolution.html" class="link-grey-16px">312: Internal Conflict Resolution</a><a href="community/how-to-moderate-voice-channels-discord.html" class="link-grey-16px">313: How to Moderate Voice Channels</a><a href="safety/training-and-onboarding-new-moderators.html" class="link-grey-16px">314: Training and Onboarding New Moderators</a><a href="safety/auto-moderation-in-discord.html" class="link-grey-16px">321: Auto Moderation in Discord</a><a href="safety/using-webhooks-and-embeds.html" class="link-grey-16px">322: Using Webhooks and Embeds </a><a href="safety/using-xp-systems.html" class="link-grey-16px">323: Using XP Systems</a><a href="safety/using-modmail-bots.html" class="link-grey-16px">324: Using Modmail Bots</a><a href="community/community-engagement.html" class="link-grey-16px">331: Community Engagement</a><a href="community/fostering-healthy-communities-discord.html" class="link-grey-16px">332: Fostering Healthy Communities</a><a href="community/Planning-Community-Events.html" class="link-grey-16px">333: Planning Community Events</a><a href="community/understanding-community-partnerships.html" class="link-grey-16px">334: Community Partnerships</a><a href="community/Understanding-Your-Community-Through-Insights.html" class="link-grey-16px">341: Understanding Your Community Through Insights</a><a href="safety/best-practices-for-moderating-content-creation.html" class="link-grey-16px">345: Best Practices for Moderating Content Creation</a><div class="line-grey"></div><div class="paragraph-20px-top16px _500">Moderation Seminars</div><a href="safety/transparency-in-moderation.html" class="link-grey-16px">401: Transparency in Moderation</a><a href="safety/confidentiality-in-moderation.html" class="link-grey-16px">402: Confidentiality in Moderation</a><a href="community/moderating-sensitive-topics-discord.html" class="link-grey-16px">403: Sensitive Topics</a><a href="safety/considering-mental-health-in-your-community.html" class="link-grey-16px">404: Considering Mental Health in Your Community </a><a href="safety/practicalities-of-moderating-adult-channels.html" class="link-grey-16px">405: Practicalities of Moderating Adult Channels</a><a href="community/managing-exponential-membership-growth-in-your-server-discord.html" class="link-grey-16px">407: Managing Exponential Membership Growth</a><a href="community/ethical-community-growth.html" class="link-grey-16px">431: Ethical Community Growth</a><a href="community/internationalization-of-a-community.html" class="link-grey-16px">432: Internationalization of a Community</a><a href="community/community-governance-structures.html" class="link-grey-16px">441: Community Governance Structures</a><a href="community/using-insights-to-improve-community-growth-engagement.html" class="link-grey-16px">442: Using Insights to Improve Community Growth and Engagement</a><a href="safety/ban-evasion-and-advanced-harassment.html" class="link-grey-16px">443: Ban Evasion and Advanced Harassment</a><a href="safety/managing-interpersonal-relationships.html" class="link-grey-16px">444: Managing Interpersonal Relationships</a><a href="safety/reddit-x-discord.html" class="link-grey-16px">451: Reddit X Discord</a><a href="safety/twitch-x-discord.html" class="link-grey-16px">452: Twitch X Discord</a><a href="safety/patreon-x-discord.html" class="link-grey-16px">453: Patreon X Discord</a><a href="safety/schools-x-discord.html" class="link-grey-16px">455: Schools X Discord</a><a href="community/bringing-other-communities-to-discord.html" class="link-grey-16px">459: Bringing Other Communities to Discord</a><div class="line-grey"></div><div class="paragraph-20px-top16px _500">Graduate</div><a href="safety/parasocial-relationships.html" class="link-grey-16px">531: Parasocial Relationships</a><a href="safety/the-application-of-metaphors-in-moderation.html" class="link-grey-16px">541: The Application of Metaphors in Moderation</a><div class="padding-56px"></div><div class="line-grey"></div><div class="paragraph-20px-top16px _500 hiden">Author Credits</div><a href="#" class="link-grey-16px end hiden">Author Credits</a></div></nav><a data-track="login" data-w-id="c36f0e26-d62e-952f-a4f7-a242f3e01e65" href="app.html" class="button-white footer-open-discord-button footer-open-discord-button-js w-button">Login</a><div class="menu-button w-nav-button"><img src="https://assets-global.website-files.com/6257adef93867e50d84d30e2/625846fc39fbe53385840143_1 (3).svg" loading="lazy" data-w-id="c36f0e26-d62e-952f-a4f7-a242f3e01e68" alt=""/><img src="https://assets-global.website-files.com/6257adef93867e50d84d30e2/625846fc39fbe53385840143_1 (3).svg" loading="lazy" alt="" class="invert-color-black"/><div class="mubu-btn"></div></div></div></div></div><div class="hero-bl-section gdc"><div class="container1180 left-align gdr"><div class="hero-text-wr gds"><h1 data-w-id="35c7967d-5ad7-1e54-f2fe-8c40ca06761a" style="-webkit-transform:translate3d(0, 12px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 12px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 12px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 12px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0" class="new-h1 font-white bottom-16px flex-mob-center">Discord at GDC 2023</h1><p data-w-id="35c7967d-5ad7-1e54-f2fe-8c40ca06761c" style="-webkit-transform:translate3d(0, 12px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 12px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 12px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 12px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0" class="paragraph-small text-color-white margin-none centered-mobile">Thanks for a fantastic GDC! The games are over, but the fun continues. Hop into our official Discord Developer server to keep building apps, including mini-games!</p><div><a data-track="Join GDC Server Header" id="w-node-_35c7967d-5ad7-1e54-f2fe-8c40ca06761f-d9fcf216" href="https://discord.gg/discord-developers" target="_blank" class="new-dark-button gdr w-inline-block"><div class="button-text-big m_medium">Join our Discord Developer server</div></a></div></div><img src="https://assets-global.website-files.com/6257adef93867e50d84d30e2/640f5b94f69000f3177a872f_gdc landing_hero.svg" loading="lazy" alt="" class="gdr-img"/></div></div><div id="about" class="section_gdc"><div class="container960"><div class="w-layout-grid grid-gdc"><div id="w-node-_6849823e-a3d8-e921-9290-d787866cea4a-d9fcf216" class="flex-tablet-center"><h2 class="new-h2 bottom-none _48px">Join from anywhere</h2><div class="padding-20px tablet-hiden"></div><div class="paragraph-16px text-color-gray tablet-centered">Meet your fellow developers and game-lovers on Discord, attend one of our Discord App Building workshops, and join our Activities tournament!</div><div class="pading-4px tablet-hiden"></div><a data-track="Join GDC Server Mini" href="https://discord.gg/discord-developers" class="link-arrow gdc">Join our Discord Developer server</a></div><img src="https://assets-global.website-files.com/6257adef93867e50d84d30e2/640f5b920bc585353952f790_gdc landing_join.svg" loading="lazy" alt=""/></div><div id="w-node-bd73a731-7514-ded3-2128-40ce32665f88-d9fcf216" class="padding-56px"></div><div class="w-layout-grid grid-gdc revers"><img src="https://assets-global.website-files.com/6257adef93867e50d84d30e2/640f5b922751754621ec0439_gdc landing_build.svg" loading="lazy" alt=""/><div id="w-node-d403170c-3b71-b535-099d-6ee5c97ff3ba-d9fcf216" class="flex-tablet-center"><h2 class="new-h2 bottom-none _48px">Learn to build Discord apps</h2><div class="padding-20px tablet-hiden"></div><div class="paragraph-16px text-color-gray tablet-centered">Join our virtual or in-person workshops for an overview of how to build the next best Discord app for fans, game communities, or just your friends.</div><div class="pading-4px tablet-hiden"></div><a href="#Schedule-section" class="link-arrow gdc">See schedule</a></div></div></div></div><div id="Schedule-section" class="section-rel gdc"><div class="container1180"><div class="faq-wrapper"><div class="faq-right-wr"><h2 class="new-h2 centered bottom-none _48px">Schedule</h2><div class="padding-10px"></div><div class="paragraph-16px text-color-gray container-580px">If you’re interested in building apps and game experiences on Discord, check out our events below. Whether you’re at Moscone Center, in our global GDC server, or just passing through - we’d love to meet you!</div><div class="padding-32px"></div><div id="process" class="faq-section bg-color-grey"><div class="acc-wr"><div data-delay="0" data-hover="false" data-w-id="35c7967d-5ad7-1e54-f2fe-8c40ca067659" class="dropdown-qa white-color w-dropdown"><div class="dropdown-toggle-blue gdc w-dropdown-toggle"><div><strong>GDC Kickoff Party!</strong></div><div class="drop-pl"><img alt="" loading="lazy" src="https://assets-global.website-files.com/6257adef93867e50d84d30e2/63f34dc7344db25cd7db4944_Group 482258.svg"/></div></div><nav class="dropdown-list-4 bottom open w-dropdown-list"><div class="location">GDC server</div><div class="faq-fr-link"><div class="location ico-date">10-10:30am, Monday, March 20</div><div data-hover="false" data-delay="0" data-w-id="ad0ad3ee-38cc-6a98-63bb-79b3c5220e08" class="gdr-dropdown w-dropdown"><div class="dropdown-toggle-2 w-dropdown-toggle"><div class="icon-dropdown w-icon-dropdown-toggle"></div><div data-track="Add to Calendar" data-w-id="ad0ad3ee-38cc-6a98-63bb-79b3c5220e0b">Add to calendar</div></div><nav class="dropdown-list-5 w-dropdown-list"><div class="event-item-content"><div class="tut-hidden-info"><div class="w-dyn-list"><div role="list" class="w-dyn-items"><div role="listitem" class="w-dyn-item"><div class="event-title">GDC Kickoff Party!</div><div class="event-start">March 20, 2023 10:00 AM</div><div class="event-end">March 20, 2023 10:30 AM</div><div class="event-timezone">PST</div><div class="event-location">GDC server</div><div class="event-desc w-richtext"><p>GDC is here! Come party with us in the Discord @ GDC server!</p></div></div></div></div></div><a cal-platform="google" href="#" class="link-cal w-inline-block"><div class="p-400-14">Google Calendar</div></a><a cal-platform="apple" href="#" class="link-cal-apple w-inline-block"><div class="p-400-14">Apple Calendar</div></a></div></nav></div></div><div class="p-400-16-white text-color-gray">GDC is here! Come party with us in the Discord @ GDC server!</div></nav></div><div data-delay="0" data-hover="false" data-w-id="d2679267-bb5a-6e19-fe1f-24b74b36aa5a" class="dropdown-qa white-color w-dropdown"><div class="dropdown-toggle-blue gdc w-dropdown-toggle"><div>App Directory Best Practices (Monday session)</div><img style="-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(45deg) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(45deg) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(45deg) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(45deg) skew(0, 0)" alt="" src="https://assets-global.website-files.com/6257adef93867e50d84d30e2/63f34dc7344db25cd7db4944_Group 482258.svg" loading="lazy" class="drop-plus white-drop"/></div><nav class="dropdown-list-4 bottom w-dropdown-list"><div class="location">GDC server</div><div class="faq-fr-link"><div class="location ico-date">11-11:45am, Monday March 20</div><div data-hover="false" data-delay="0" data-w-id="df176d48-e18f-f23d-9d66-49483aa82c39" class="gdr-dropdown w-dropdown"><div class="dropdown-toggle-2 w-dropdown-toggle"><div class="icon-dropdown w-icon-dropdown-toggle"></div><div>Add to calendar</div></div><nav class="dropdown-list-5 w-dropdown-list"><div class="event-item-content"><div class="tut-hidden-info"><div class="w-dyn-list"><div role="list" class="w-dyn-items"><div role="listitem" class="w-dyn-item"><div class="event-title">App Directory Best Practices (Monday session)</div><div class="event-start">March 20, 2023 11:00 AM</div><div class="event-end">March 20, 2023 11:45 AM</div><div class="event-timezone">PST</div><div class="event-location">GDC server</div><div class="event-desc w-richtext"><p>You created an app on Discord! Now what? Join Discord staff as we discuss App Directory best practices, and learn how to increase visibility of your app.</p></div></div></div></div></div><a cal-platform="google" href="#" class="link-cal w-inline-block"><div class="p-400-14">Google Calendar</div></a><a cal-platform="apple" href="#" class="link-cal-apple w-inline-block"><div class="p-400-14">Apple Calendar</div></a></div></nav></div></div><div class="p-400-16-white text-color-gray">You created an app on Discord! Now what? Join Discord staff as we discuss App Directory best practices, and learn how to increase visibility of your app.</div></nav></div><div data-delay="0" data-hover="false" data-w-id="d410c79d-ca10-e641-3566-8f73decd2b58" class="dropdown-qa white-color w-dropdown"><div class="dropdown-toggle-blue gdc w-dropdown-toggle"><div>App Directory Best Practices (Tuesday screening party)</div><img style="-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(45deg) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(45deg) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(45deg) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(45deg) skew(0, 0)" alt="" src="https://assets-global.website-files.com/6257adef93867e50d84d30e2/63f34dc7344db25cd7db4944_Group 482258.svg" loading="lazy" class="drop-plus white-drop"/></div><nav class="dropdown-list-4 bottom w-dropdown-list"><div class="location">GDC server</div><div class="faq-fr-link"><div class="location ico-date">3-3:45am, Tuesday March 21</div><div data-hover="false" data-delay="0" data-w-id="d410c79d-ca10-e641-3566-8f73decd2b80" class="gdr-dropdown w-dropdown"><div class="dropdown-toggle-2 w-dropdown-toggle"><div class="icon-dropdown w-icon-dropdown-toggle"></div><div>Add to calendar</div></div><nav class="dropdown-list-5 w-dropdown-list"><div class="event-item-content"><div class="tut-hidden-info"><div class="w-dyn-list"><div role="list" class="w-dyn-items"><div role="listitem" class="w-dyn-item"><div class="event-title">App Directory Best Practices (Tuesday screening party)</div><div class="event-start">March 21, 2023 3:00 AM</div><div class="event-end">March 21, 2023 3:45 AM</div><div class="event-timezone">PST</div><div class="event-location">GDC server</div><div class="event-desc w-richtext"><p>Missed the earlier App Directory Best Practices session? No worries! Join us for the screening party.</p></div></div></div></div></div><a cal-platform="google" href="#" class="link-cal w-inline-block"><div class="p-400-14">Google Calendar</div></a><a cal-platform="apple" href="#" class="link-cal-apple w-inline-block"><div class="p-400-14">Apple Calendar</div></a></div></nav></div></div><div class="p-400-16-white text-color-gray">Missed the earlier App Directory Best Practices session? No worries! Join us for the screening party.</div></nav></div><div data-delay="0" data-hover="false" data-w-id="de6c14bc-9484-c8cc-62da-dad7b9cdb059" class="dropdown-qa white-color w-dropdown"><div class="dropdown-toggle-blue gdc w-dropdown-toggle"><div>App-Building Workshop (Tuesday session)</div><img style="-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(45deg) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(45deg) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(45deg) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(45deg) skew(0, 0)" alt="" src="https://assets-global.website-files.com/6257adef93867e50d84d30e2/63f34dc7344db25cd7db4944_Group 482258.svg" loading="lazy" class="drop-plus white-drop"/></div><nav class="dropdown-list-4 bottom w-dropdown-list"><div class="location">GDC server</div><div class="faq-fr-link"><div class="location ico-date">11am-2pm Tuesday March 21</div><div data-hover="false" data-delay="0" data-w-id="de6c14bc-9484-c8cc-62da-dad7b9cdb081" class="gdr-dropdown w-dropdown"><div class="dropdown-toggle-2 w-dropdown-toggle"><div class="icon-dropdown w-icon-dropdown-toggle"></div><div>Add to calendar</div></div><nav class="dropdown-list-5 w-dropdown-list"><div class="event-item-content"><div class="tut-hidden-info"><div class="w-dyn-list"><div role="list" class="w-dyn-items"><div role="listitem" class="w-dyn-item"><div class="event-title">App-Building Workshop (Tuesday session)</div><div class="event-start">March 21, 2023 11:00 AM</div><div class="event-end">March 21, 2023 2:00 PM</div><div class="event-timezone">PST</div><div class="event-location">GDC server</div><div class="event-desc w-richtext"><p>Missed the earlier App-Building Workshop? No worries! Join us for the screening party.</p></div></div></div></div></div><a cal-platform="google" href="#" class="link-cal w-inline-block"><div class="p-400-14">Google Calendar</div></a><a cal-platform="apple" href="#" class="link-cal-apple w-inline-block"><div class="p-400-14">Apple Calendar</div></a></div></nav></div></div><div class="p-400-16-white text-color-gray">Missed the earlier App-Building Workshop? No worries! Join us for the screening party.</div></nav></div><div data-delay="0" data-hover="false" data-w-id="1f2ce3c9-740c-6b2d-eabd-eafe6e9f1708" class="dropdown-qa white-color w-dropdown"><div class="dropdown-toggle-blue gdc w-dropdown-toggle"><div>Activities Tournament: Groups Mallow and Graggle</div><img style="-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(45deg) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(45deg) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(45deg) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(45deg) skew(0, 0)" alt="" src="https://assets-global.website-files.com/6257adef93867e50d84d30e2/63f34dc7344db25cd7db4944_Group 482258.svg" loading="lazy" class="drop-plus white-drop"/></div><nav class="dropdown-list-4 bottom w-dropdown-list"><div class="location">GDC server</div><div class="faq-fr-link"><div class="location ico-date">3-4pm Tuesday March 21</div><div data-hover="false" data-delay="0" data-w-id="f7e80876-fd95-2cd8-d84b-47f631df262b" class="gdr-dropdown w-dropdown"><div class="dropdown-toggle-2 w-dropdown-toggle"><div class="icon-dropdown w-icon-dropdown-toggle"></div><div>Add to calendar</div></div><nav class="dropdown-list-5 w-dropdown-list"><div class="event-item-content"><div class="tut-hidden-info"><div class="w-dyn-list"><div role="list" class="w-dyn-items"><div role="listitem" class="w-dyn-item"><div class="event-title">Activities Tournament: Groups Mallow and Graggle</div><div class="event-start">March 21, 2023 3:00 PM</div><div class="event-end">March 21, 2023 4:00 PM</div><div class="event-timezone">PST</div><div class="event-location">GDC server</div><div class="event-desc w-richtext"><p>Come cheer on Mallow and Graggle groups as they compete in the Activities Tournament! I wonder what Activity they’ll play…</p></div></div></div></div></div><a cal-platform="google" href="#" class="link-cal w-inline-block"><div class="p-400-14">Google Calendar</div></a><a cal-platform="apple" href="#" class="link-cal-apple w-inline-block"><div class="p-400-14">Apple Calendar</div></a></div></nav></div></div><div class="p-400-16-white text-color-gray">Come cheer on Mallow and Graggle groups as they compete in the Activities Tournament! I wonder what Activity they’ll play…</div></nav></div><div data-delay="0" data-hover="false" data-w-id="cf95a508-231a-7ca6-0acb-c1532977b360" class="dropdown-qa white-color w-dropdown"><div class="dropdown-toggle-blue gdc w-dropdown-toggle"><div>App Building Workshop (Wednesday screening)</div><img style="-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(45deg) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(45deg) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(45deg) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(45deg) skew(0, 0)" alt="" src="https://assets-global.website-files.com/6257adef93867e50d84d30e2/63f34dc7344db25cd7db4944_Group 482258.svg" loading="lazy" class="drop-plus white-drop"/></div><nav class="dropdown-list-4 bottom w-dropdown-list"><div class="location">GDC server</div><div class="faq-fr-link"><div class="location ico-date">3am-6am Wednesday March 22</div><div data-hover="false" data-delay="0" data-w-id="cf95a508-231a-7ca6-0acb-c1532977b388" class="gdr-dropdown w-dropdown"><div class="dropdown-toggle-2 w-dropdown-toggle"><div class="icon-dropdown w-icon-dropdown-toggle"></div><div>Add to calendar</div></div><nav class="dropdown-list-5 w-dropdown-list"><div class="event-item-content"><div class="tut-hidden-info"><div class="w-dyn-list"><div role="list" class="w-dyn-items"><div role="listitem" class="w-dyn-item"><div class="event-title">App Building Workshop (Wednesday screening)</div><div class="event-start">March 22, 2023 3:00 AM</div><div class="event-end">March 22, 2023 6:00 AM</div><div class="event-timezone">PST</div><div class="event-location">GDC server</div><div class="event-desc w-richtext"><p>Learn how to create a fully-functioning Discord application! Here you’ll learn best practices and the latest API updates from internal Discord staff.</p></div></div></div></div></div><a cal-platform="google" href="#" class="link-cal w-inline-block"><div class="p-400-14">Google Calendar</div></a><a cal-platform="apple" href="#" class="link-cal-apple w-inline-block"><div class="p-400-14">Apple Calendar</div></a></div></nav></div></div><div class="p-400-16-white text-color-gray">Learn how to create a fully-functioning Discord application! Here you’ll learn best practices and the latest API updates from internal Discord staff.</div></nav></div><div data-delay="0" data-hover="false" data-w-id="067beb4f-45ac-087d-9b03-95a5f4a4b17e" class="dropdown-qa white-color w-dropdown"><div class="dropdown-toggle-blue gdc w-dropdown-toggle"><div>App Building Workshop (Wednesday session)</div><img style="-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(45deg) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(45deg) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(45deg) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(45deg) skew(0, 0)" alt="" src="https://assets-global.website-files.com/6257adef93867e50d84d30e2/63f34dc7344db25cd7db4944_Group 482258.svg" loading="lazy" class="drop-plus white-drop"/></div><nav class="dropdown-list-4 bottom w-dropdown-list"><div class="location">GDC server</div><div class="faq-fr-link"><div class="location ico-date">11am-2pm Wednesday March 22</div><div data-hover="false" data-delay="0" data-w-id="c5c69a10-484c-8677-f225-06b3bbb0a389" class="gdr-dropdown w-dropdown"><div class="dropdown-toggle-2 w-dropdown-toggle"><div class="icon-dropdown w-icon-dropdown-toggle"></div><div>Add to calendar</div></div><nav class="dropdown-list-5 w-dropdown-list"><div class="event-item-content"><div class="tut-hidden-info"><div class="w-dyn-list"><div role="list" class="w-dyn-items"><div role="listitem" class="w-dyn-item"><div class="event-title">App Building Workshop (Wednesday session)</div><div class="event-start">March 22, 2023 11:00 AM</div><div class="event-end">March 22, 2023 2:00 PM</div><div class="event-timezone">PST</div><div class="event-location">GDC server</div><div class="event-desc w-richtext"><p>Missed the earlier App-Building Workshop? No worries! Join us for the screening party.</p></div></div></div></div></div><a cal-platform="google" href="#" class="link-cal w-inline-block"><div class="p-400-14">Google Calendar</div></a><a cal-platform="apple" href="#" class="link-cal-apple w-inline-block"><div class="p-400-14">Apple Calendar</div></a></div></nav></div></div><div class="p-400-16-white text-color-gray">Learn how to create a fully-functioning Discord application! Here you’ll learn best practices and the latest API updates from internal Discord staff.</div></nav></div><div data-delay="0" data-hover="false" data-w-id="f17c623d-19d9-deaf-1590-0b5d65855ffc" class="dropdown-qa white-color w-dropdown"><div class="dropdown-toggle-blue gdc w-dropdown-toggle"><div>Discord Apps 101: Come Build!</div><img style="-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(45deg) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(45deg) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(45deg) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(45deg) skew(0, 0)" alt="" src="https://assets-global.website-files.com/6257adef93867e50d84d30e2/63f34dc7344db25cd7db4944_Group 482258.svg" loading="lazy" class="drop-plus white-drop"/></div><nav class="dropdown-list-4 bottom w-dropdown-list"><div class="location">West Hall (Moscone Center)</div><div class="faq-fr-link"><div class="location ico-date">3:30 PM - 4:30 PM, Wednesday March 22</div><div data-hover="false" data-delay="0" data-w-id="5c9fcc40-f996-9708-57c4-88633f7f1938" class="gdr-dropdown w-dropdown"><div class="dropdown-toggle-2 w-dropdown-toggle"><div class="icon-dropdown w-icon-dropdown-toggle"></div><div>Add to calendar</div></div><nav class="dropdown-list-5 w-dropdown-list"><div class="event-item-content"><div class="tut-hidden-info"><div class="w-dyn-list"><div role="list" class="w-dyn-items"><div role="listitem" class="w-dyn-item"><div class="event-title">Discord Apps 101: Come Build!</div><div class="event-start">March 22, 2023 3:30 PM</div><div class="event-end">March 22, 2023 4:30 PM</div><div class="event-timezone">PST</div><div class="event-location">West Hall (Moscone Center)</div><div class="event-desc w-richtext"><p>Interested in enhancing your Discord experience and building a customized app for your friends? Join us for a platform overview, some inspiration, and a power session on new features and design best practices. Whether you want to build for just your friends or to build a business, Discord enables you to create fun and personalized experiences in a place where millions of users already hang out.</p></div></div></div></div></div><a cal-platform="google" href="#" class="link-cal w-inline-block"><div class="p-400-14">Google Calendar</div></a><a cal-platform="apple" href="#" class="link-cal-apple w-inline-block"><div class="p-400-14">Apple Calendar</div></a></div></nav></div></div><div class="p-400-16-white text-color-gray">Interested in enhancing your Discord experience and building a customized app for your friends? Join us for a platform overview, some inspiration, and a power session on new features and design best practices. Whether you want to build for just your friends or to build a business, Discord enables you to create fun and personalized experiences in a place where millions of users already hang out.</div></nav></div><div data-delay="0" data-hover="false" data-w-id="b617a0ff-fa44-5975-f6c7-d72888b474f7" class="dropdown-qa white-color w-dropdown"><div class="dropdown-toggle-blue gdc w-dropdown-toggle"><div>Activities Tournament: Groups Phibi and Cap</div><img style="-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(45deg) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(45deg) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(45deg) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(45deg) skew(0, 0)" alt="" src="https://assets-global.website-files.com/6257adef93867e50d84d30e2/63f34dc7344db25cd7db4944_Group 482258.svg" loading="lazy" class="drop-plus white-drop"/></div><nav class="dropdown-list-4 bottom w-dropdown-list"><div class="location">GDC server</div><div class="faq-fr-link"><div class="location ico-date">3-4pm Wednesday, March 22</div><div data-hover="false" data-delay="0" data-w-id="b617a0ff-fa44-5975-f6c7-d72888b4751f" class="gdr-dropdown w-dropdown"><div class="dropdown-toggle-2 w-dropdown-toggle"><div class="icon-dropdown w-icon-dropdown-toggle"></div><div>Add to calendar</div></div><nav class="dropdown-list-5 w-dropdown-list"><div class="event-item-content"><div class="tut-hidden-info"><div class="w-dyn-list"><div role="list" class="w-dyn-items"><div role="listitem" class="w-dyn-item"><div class="event-title">Activities Tournament: Groups Phibi and Cap</div><div class="event-start">March 22, 2023 3:00 PM</div><div class="event-end">March 22, 2023 4:00 PM</div><div class="event-timezone">PST</div><div class="event-location">GDC server</div><div class="event-desc w-richtext"><p>Come cheer on Phibi and Cap groups as they compete in the Activities Tournament! I wonder what Activity they’ll play…</p></div></div></div></div></div><a cal-platform="google" href="#" class="link-cal w-inline-block"><div class="p-400-14">Google Calendar</div></a><a cal-platform="apple" href="#" class="link-cal-apple w-inline-block"><div class="p-400-14">Apple Calendar</div></a></div></nav></div></div><div class="p-400-16-white text-color-gray">Come cheer on Phibi and Cap groups as they compete in the Activities Tournament! I wonder what Activity they’ll play…</div></nav></div><div data-delay="0" data-hover="false" data-w-id="f27518b1-9e26-906b-7b20-43890922f2cf" class="dropdown-qa white-color w-dropdown"><div class="dropdown-toggle-blue gdc w-dropdown-toggle"><div>App Building Workshop (Thursday screening party)</div><img style="-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(45deg) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(45deg) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(45deg) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(45deg) skew(0, 0)" alt="" src="https://assets-global.website-files.com/6257adef93867e50d84d30e2/63f34dc7344db25cd7db4944_Group 482258.svg" loading="lazy" class="drop-plus white-drop"/></div><nav class="dropdown-list-4 bottom w-dropdown-list"><div class="location">GDC server</div><div class="faq-fr-link"><div class="location ico-date">3am-6am Thursday, March 23</div><div data-hover="false" data-delay="0" data-w-id="f27518b1-9e26-906b-7b20-43890922f2f7" class="gdr-dropdown w-dropdown"><div class="dropdown-toggle-2 w-dropdown-toggle"><div class="icon-dropdown w-icon-dropdown-toggle"></div><div>Add to calendar</div></div><nav class="dropdown-list-5 w-dropdown-list"><div class="event-item-content"><div class="tut-hidden-info"><div class="w-dyn-list"><div role="list" class="w-dyn-items"><div role="listitem" class="w-dyn-item"><div class="event-title">App Building Workshop (Thursday screening party)</div><div class="event-start">March 23, 2023 3:00 AM</div><div class="event-end">March 23, 2023 6:00 AM</div><div class="event-timezone">PST</div><div class="event-location">GDC server</div><div class="event-desc w-richtext"><p>Learn how to create a fully-functioning Discord application! Here you’ll learn best practices and the latest API updates from internal Discord staff.</p></div></div></div></div></div><a cal-platform="google" href="#" class="link-cal w-inline-block"><div class="p-400-14">Google Calendar</div></a><a cal-platform="apple" href="#" class="link-cal-apple w-inline-block"><div class="p-400-14">Apple Calendar</div></a></div></nav></div></div><div class="p-400-16-white text-color-gray">Missed the earlier App-Building Workshop? No worries! Join us for the screening party.</div></nav></div><div data-delay="0" data-hover="false" data-w-id="0211df17-6b5b-a323-9669-8b332f98fdba" class="dropdown-qa white-color w-dropdown"><div class="dropdown-toggle-blue gdc w-dropdown-toggle"><div>App Directory Best Practices (Thursday session)</div><img style="-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(45deg) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(45deg) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(45deg) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(45deg) skew(0, 0)" alt="" src="https://assets-global.website-files.com/6257adef93867e50d84d30e2/63f34dc7344db25cd7db4944_Group 482258.svg" loading="lazy" class="drop-plus white-drop"/></div><nav class="dropdown-list-4 bottom w-dropdown-list"><div class="location">GDC server</div><div class="faq-fr-link"><div class="location ico-date">11-11:45am Thursday, March 23</div><div data-hover="false" data-delay="0" data-w-id="0211df17-6b5b-a323-9669-8b332f98fde2" class="gdr-dropdown w-dropdown"><div class="dropdown-toggle-2 w-dropdown-toggle"><div class="icon-dropdown w-icon-dropdown-toggle"></div><div>Add to calendar</div></div><nav class="dropdown-list-5 w-dropdown-list"><div class="event-item-content"><div class="tut-hidden-info"><div class="w-dyn-list"><div role="list" class="w-dyn-items"><div role="listitem" class="w-dyn-item"><div class="event-title">App Directory Best Practices (Thursday session)</div><div class="event-start">March 23, 2023 11:00 AM</div><div class="event-end">March 23, 2023 11:45 AM</div><div class="event-timezone">PST</div><div class="event-location">GDC server</div><div class="event-desc w-richtext"><p>You created an app on Discord! Now what? Join Discord staff as we discuss App Directory best practices, and learn how to increase visibility of your app.</p></div></div></div></div></div><a cal-platform="google" href="#" class="link-cal w-inline-block"><div class="p-400-14">Google Calendar</div></a><a cal-platform="apple" href="#" class="link-cal-apple w-inline-block"><div class="p-400-14">Apple Calendar</div></a></div></nav></div></div><div class="p-400-16-white text-color-gray">You created an app on Discord! Now what? Join Discord staff as we discuss App Directory best practices, and learn how to increase visibility of your app.</div></nav></div><div data-delay="0" data-hover="false" data-w-id="01ce9975-8b06-4c62-c77c-7ac6387e6761" class="dropdown-qa white-color w-dropdown"><div class="dropdown-toggle-blue gdc w-dropdown-toggle"><div>Discord Developer Platform</div><img style="-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(45deg) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(45deg) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(45deg) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(45deg) skew(0, 0)" alt="" src="https://assets-global.website-files.com/6257adef93867e50d84d30e2/63f34dc7344db25cd7db4944_Group 482258.svg" loading="lazy" class="drop-plus white-drop"/></div><nav class="dropdown-list-4 bottom w-dropdown-list"><div class="location">Industry Stage (Moscone Center)</div><div class="faq-fr-link"><div class="location ico-date">11:30 AM - 12:30 PM, Thursday March 23, 2023</div><div data-hover="false" data-delay="0" data-w-id="a4a841f0-d09e-1044-7b0f-14884734d6e2" class="gdr-dropdown w-dropdown"><div class="dropdown-toggle-2 w-dropdown-toggle"><div class="icon-dropdown w-icon-dropdown-toggle"></div><div>Add to calendar</div></div><nav class="dropdown-list-5 w-dropdown-list"><div class="event-item-content"><div class="tut-hidden-info"><div class="w-dyn-list"><div role="list" class="w-dyn-items"><div role="listitem" class="w-dyn-item"><div class="event-title">Discord Developer Platform</div><div class="event-start">March 23, 2023 11:30 AM</div><div class="event-end">March 23, 2023 12:30 PM</div><div class="event-timezone">PST</div><div class="event-location">Industry Stage (Moscone Center)</div><div class="event-desc w-richtext"><p>Join us for an overview of Discord&#x27;s extensible platform, where professionals and individual entrepreneurs are providing millions of fans with fun and customized experiences that enhance their Discord experience. Whether you&#x27;re interested in driving gameplay, brand awareness, community engagement, or revenue, Discord is a one-of-a-kind opportunity - so come learn more!</p></div></div></div></div></div><a cal-platform="google" href="#" class="link-cal w-inline-block"><div class="p-400-14">Google Calendar</div></a><a cal-platform="apple" href="#" class="link-cal-apple w-inline-block"><div class="p-400-14">Apple Calendar</div></a></div></nav></div></div><div class="p-400-16-white text-color-gray">Join us for an overview of Discord&#x27;s extensible platform, where professionals and individual entrepreneurs are providing millions of fans with fun and customized experiences that enhance their Discord experience. Whether you&#x27;re interested in driving gameplay, brand awareness, community engagement, or revenue, Discord is a one-of-a-kind opportunity - so come learn more!</div></nav></div><div data-delay="0" data-hover="false" data-w-id="07015742-ae92-daf6-fc8c-434a7d3bc0d6" class="dropdown-qa white-color w-dropdown"><div class="dropdown-toggle-blue gdc w-dropdown-toggle"><div>Activities Tournament: Semi-finals</div><img style="-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(45deg) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(45deg) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(45deg) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(45deg) skew(0, 0)" alt="" src="https://assets-global.website-files.com/6257adef93867e50d84d30e2/63f34dc7344db25cd7db4944_Group 482258.svg" loading="lazy" class="drop-plus white-drop"/></div><nav class="dropdown-list-4 bottom w-dropdown-list"><div class="location">GDC server</div><div class="faq-fr-link"><div class="location ico-date">3-4pm Thursday March 23</div><div data-hover="false" data-delay="0" data-w-id="07015742-ae92-daf6-fc8c-434a7d3bc0fe" class="gdr-dropdown w-dropdown"><div class="dropdown-toggle-2 w-dropdown-toggle"><div class="icon-dropdown w-icon-dropdown-toggle"></div><div>Add to calendar</div></div><nav class="dropdown-list-5 w-dropdown-list"><div class="event-item-content"><div class="tut-hidden-info"><div class="w-dyn-list"><div role="list" class="w-dyn-items"><div role="listitem" class="w-dyn-item"><div class="event-title">Activities Tournament: Semi-finals</div><div class="event-start">March 23, 2023 3:00 PM</div><div class="event-end">March 23, 2023 4:00 PM</div><div class="event-timezone">PST</div><div class="event-location">GDC server</div><div class="event-desc w-richtext"><p>It’s the semi-final countdown! Cheer on your favorite teams as they compete in the Activities Tournament.</p></div></div></div></div></div><a cal-platform="google" href="#" class="link-cal w-inline-block"><div class="p-400-14">Google Calendar</div></a><a cal-platform="apple" href="#" class="link-cal-apple w-inline-block"><div class="p-400-14">Apple Calendar</div></a></div></nav></div></div><div class="p-400-16-white text-color-gray">It&#x27;s the semi-final countdown! Cheer on your favorites as they compete in the Activities Tournament.</div></nav></div><div data-delay="0" data-hover="false" data-w-id="a9854d32-d974-6323-8326-cbd6a193843a" class="dropdown-qa white-color w-dropdown"><div class="dropdown-toggle-blue gdc w-dropdown-toggle"><div>App Directory Best Practices (Friday screening party)</div><img style="-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(45deg) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(45deg) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(45deg) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(45deg) skew(0, 0)" alt="" src="https://assets-global.website-files.com/6257adef93867e50d84d30e2/63f34dc7344db25cd7db4944_Group 482258.svg" loading="lazy" class="drop-plus white-drop"/></div><nav class="dropdown-list-4 bottom w-dropdown-list"><div class="location">GDC server</div><div class="faq-fr-link"><div class="location ico-date">3-3:45am Friday March 24</div><div data-hover="false" data-delay="0" data-w-id="a9854d32-d974-6323-8326-cbd6a1938462" class="gdr-dropdown w-dropdown"><div class="dropdown-toggle-2 w-dropdown-toggle"><div class="icon-dropdown w-icon-dropdown-toggle"></div><div>Add to calendar</div></div><nav class="dropdown-list-5 w-dropdown-list"><div class="event-item-content"><div class="tut-hidden-info"><div class="w-dyn-list"><div role="list" class="w-dyn-items"><div role="listitem" class="w-dyn-item"><div class="event-title">App Directory Best Practices (Friday screening party)</div><div class="event-start">March 24, 2023 3:00 AM</div><div class="event-end">March 24, 2023 3:45 AM</div><div class="event-timezone">PST</div><div class="event-location">GDC server</div><div class="event-desc w-richtext"><p>Missed the earlier App Directory Best Practices session? No worries! Join us for the screening party.</p></div></div></div></div></div><a cal-platform="google" href="#" class="link-cal w-inline-block"><div class="p-400-14">Google Calendar</div></a><a cal-platform="apple" href="#" class="link-cal-apple w-inline-block"><div class="p-400-14">Apple Calendar</div></a></div></nav></div></div><div class="p-400-16-white text-color-gray">Missed the earlier App Directory Best Practices session? No worries! Join us for the screening party.</div></nav></div><div data-delay="0" data-hover="false" data-w-id="90e18ac6-8d1b-2054-27f8-6d7d0478270e" class="dropdown-qa white-color w-dropdown"><div class="dropdown-toggle-blue gdc w-dropdown-toggle"><div>Activities Tournament: Finals</div><img style="-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(45deg) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(45deg) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(45deg) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(45deg) skew(0, 0)" alt="" src="https://assets-global.website-files.com/6257adef93867e50d84d30e2/63f34dc7344db25cd7db4944_Group 482258.svg" loading="lazy" class="drop-plus white-drop"/></div><nav class="dropdown-list-4 bottom w-dropdown-list"><div class="location">GDC server</div><div class="faq-fr-link"><div class="location ico-date">3-3:30pm Friday March 24</div><div data-hover="false" data-delay="0" data-w-id="90e18ac6-8d1b-2054-27f8-6d7d04782736" class="gdr-dropdown w-dropdown"><div class="dropdown-toggle-2 w-dropdown-toggle"><div class="icon-dropdown w-icon-dropdown-toggle"></div><div>Add to calendar</div></div><nav class="dropdown-list-5 w-dropdown-list"><div class="event-item-content"><div class="tut-hidden-info"><div class="w-dyn-list"><div role="list" class="w-dyn-items"><div role="listitem" class="w-dyn-item"><div class="event-title">Activities Tournament: Finals</div><div class="event-start">March 24, 2023 3:00 PM</div><div class="event-end">March 24, 2023 3:30 PM</div><div class="event-timezone">PST</div><div class="event-location">GDC server</div><div class="event-desc w-richtext"><p>The finals are here. Are you ready?! Join us for the last round of the Activities Tournament - be ready for a surprise!</p></div></div></div></div></div><a cal-platform="google" href="#" class="link-cal w-inline-block"><div class="p-400-14">Google Calendar</div></a><a cal-platform="apple" href="#" class="link-cal-apple w-inline-block"><div class="p-400-14">Apple Calendar</div></a></div></nav></div></div><div class="p-400-16-white text-color-gray">The finals are here. Are you ready? Join us for the last round of the Activities Tournament - be ready for a surprise!</div></nav></div><div data-delay="0" data-hover="false" data-w-id="da7a5ebc-85e8-49d5-9b89-8f8f35049f27" class="dropdown-qa white-color w-dropdown"><div class="dropdown-toggle-blue gdc w-dropdown-toggle"><div>GDC Closing Ceremonies</div><img style="-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(45deg) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(45deg) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(45deg) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(45deg) skew(0, 0)" alt="" src="https://assets-global.website-files.com/6257adef93867e50d84d30e2/63f34dc7344db25cd7db4944_Group 482258.svg" loading="lazy" class="drop-plus white-drop"/></div><nav class="dropdown-list-4 bottom w-dropdown-list"><div class="location">GDC server</div><div class="faq-fr-link"><div class="location ico-date">4-4:30pm Friday March 24</div><div data-hover="false" data-delay="0" data-w-id="c919cec2-7159-8fbc-d2e1-5072345a8469" class="gdr-dropdown w-dropdown"><div class="dropdown-toggle-2 w-dropdown-toggle"><div class="icon-dropdown w-icon-dropdown-toggle"></div><div>Add to calendar</div></div><nav class="dropdown-list-5 w-dropdown-list"><div class="event-item-content"><div class="tut-hidden-info"><div class="w-dyn-list"><div role="list" class="w-dyn-items"><div role="listitem" class="w-dyn-item"><div class="event-title">GDC Closing Ceremonies</div><div class="event-start">March 24, 2023 4:00 PM</div><div class="event-end">March 24, 2023 4:30 PM</div><div class="event-timezone">PST</div><div class="event-location">GDC server</div><div class="event-desc w-richtext"><p>All good things must come to an end.</p></div></div></div></div></div><a cal-platform="google" href="#" class="link-cal w-inline-block"><div class="p-400-14">Google Calendar</div></a><a cal-platform="apple" href="#" class="link-cal-apple w-inline-block"><div class="p-400-14">Apple Calendar</div></a></div></nav></div></div><div class="p-400-16-white text-color-gray">All good things must come to an end.</div></nav></div></div></div></div></div></div></div><div class="section-white-moderation bg-gdc"><div class="container-580px flex-center"><h2 class="heading-dark-48px center white-color">Or just get building!</h2><p class="paragraph-16px text-color-white-cecondary text-aline-center">Ready to bring your next idea to millions of fans, communities, and friends? Check out our <a href="developers/docs/getting-started.html" target="_blank" class="link-white-2">Getting Started guide</a>. We also have an official Discord Developer server where you can join events year-round, hear the latest news on our product roadmap, meet Discord team members, and get inspired by your fellow Discord devs.</p><div class="padding-20px"></div><a data-track="Join Discord Server Bottom CTA" href="https://discord.gg/discord-developers" class="new-dark-button w-inline-block"><div class="button-text-big m_medium">Join official Discord Developer server</div></a></div></div><div data-w-id="d182f768-5cb1-47e3-0150-c8832fa3309f" class="footer-black"><div class="container-1180px"><div class="w-layout-grid grid-footer"><div id="w-node-d182f768-5cb1-47e3-0150-c8832fa330a2-2fa3309f" class="vertical-flex"><div data-hover="false" data-delay="0" class="dropdown-3 w-dropdown"><div class="dropdown-toggle w-dropdown-toggle"><img src="https://assets-global.website-files.com/6257adef93867e50d84d30e2/6257bee91e6309a5a6f6b994_arrow.svg" loading="lazy" alt="" class="arrow"/><div>English, USA</div></div><nav class="dropdown-list w-dropdown-list"><a href="#" class="dropdown-link w-dropdown-link">български</a><a href="#" class="dropdown-link czech w-dropdown-link">Čeština</a><a href="#" class="dropdown-link dansk w-dropdown-link">Dansk</a><a href="#" class="dropdown-link deutsch w-dropdown-link">Deutsch</a><a href="#" class="dropdown-link greek w-dropdown-link">Ελληνικά</a><a href="#" class="dropdown-link english w-dropdown-link">English, USA</a><a href="#" class="dropdown-link spanish w-dropdown-link">Español</a><a href="#" class="dropdown-link suomi w-dropdown-link">Suomi</a><a href="#" class="dropdown-link french w-dropdown-link">Français</a><a href="#" class="dropdown-link hindi w-dropdown-link">हिंदी</a><a href="#" class="dropdown-link hrvatski w-dropdown-link">Hrvatski</a><a href="#" class="dropdown-link magyar w-dropdown-link">Magyar</a><a href="#" class="dropdown-link italiano w-dropdown-link">Italiano</a><a href="#" class="dropdown-link japanese w-dropdown-link">日本語</a><a href="#" class="dropdown-link korean w-dropdown-link">한국어</a><a href="#" class="dropdown-link lithuanian w-dropdown-link">Lietuviškai</a><a href="#" class="dropdown-link nederlands w-dropdown-link">Nederlands</a><a href="#" class="dropdown-link norwegian w-dropdown-link">Norwegian</a><a href="#" class="dropdown-link polski w-dropdown-link">Polski</a><a href="#" class="dropdown-link brazilian-portuguese w-dropdown-link">Português do Brasil</a><a href="#" class="dropdown-link romania w-dropdown-link">Română</a><a href="#" class="dropdown-link ru w-dropdown-link">Русский</a><a href="#" class="dropdown-link svenska w-dropdown-link">Svenska</a><a href="#" class="dropdown-link thai w-dropdown-link">ไทย</a><a href="#" class="dropdown-link turkey w-dropdown-link">Türkçe</a><a href="#" class="dropdown-link ua w-dropdown-link">Українська</a><a href="#" class="dropdown-link vietnamese w-dropdown-link">Tiếng Việt</a><a href="#" class="dropdown-link chinese1 w-dropdown-link">中文</a><a href="#" class="dropdown-link chinese w-dropdown-link">繁體中文</a></nav></div><div class="language"><div class="lang-container"><a href="#" class="lang-selector-container w-inline-block"><div class="locale-container"><img src="https://assets-global.website-files.com/plugins/Basic/assets/placeholder.60f9b1840c.svg" alt="" class="flag"/><div class="selector-language-name"></div></div><img src="https://assets-global.website-files.com/6257adef93867e50d84d30e2/6257bee91e6309a5a6f6b994_arrow.svg" loading="lazy" alt="" class="arrow-icon"/></a><div id="locale-dropdown" class="lang-dropdown-container"><div class="lang-dropdown"></div></div></div></div><div class="flex-horizontal top-soc"><a data-track="twitter" href="https://twitter.com/discord" target="_blank" class="link-s w-inline-block"><img src="https://assets-global.website-files.com/6257adef93867e50d84d30e2/65814a2cce6df7cee5ec949c_X.svg" loading="lazy" alt="" class="image"/></a><a data-track="instagram" href="https://www.instagram.com/discord/" target="_blank" class="link-s w-inline-block"><img src="https://assets-global.website-files.com/6257adef93867e50d84d30e2/6257d3d56f8ce7dbabec148e_svg4.svg" loading="lazy" alt="" class="image"/></a><a data-track="facebook" href="https://www.facebook.com/discord/" target="_blank" class="link-s w-inline-block"><img src="https://assets-global.website-files.com/6257adef93867e50d84d30e2/6257d3d4ee20adc649cfe436_svg5.svg" loading="lazy" alt="" class="image"/></a><a data-track="youtube" href="https://www.youtube.com/discord" target="_blank" class="link-s w-inline-block"><img src="https://assets-global.website-files.com/6257adef93867e50d84d30e2/6257d3d516bc77e9a8c557ba_svg6.svg" loading="lazy" alt="" class="image"/></a><a data-track="Tiktok" href="https://www.tiktok.com/@discord" target="_blank" class="link-s w-inline-block"><img src="https://assets-global.website-files.com/6257adef93867e50d84d30e2/6374a8122d8df285ddea0e9e_Tiktok (1).svg" loading="lazy" alt="" class="image"/></a></div></div><div id="w-node-d182f768-5cb1-47e3-0150-c8832fa330ee-2fa3309f"><div class="paragraph-small top-marg font-blue">Product</div><a data-track="download" href="download.html" class="link-footer">Download</a><a data-track="nitro" href="nitro.html" class="link-footer">Nitro</a><a data-track="status" href="https://discordstatus.com/" class="link-footer">Status</a><a data-track="app directory" href="application-directory.html" class="link-footer">App Directory</a><a data-track="app directory" href="mobile.html" class="link-footer">New Mobile Experience</a></div><div id="w-node-d182f768-5cb1-47e3-0150-c8832fa330f7-2fa3309f"><div class="paragraph-small top-marg font-blue">Company</div><a data-track="about" href="company.html" class="link-footer">About</a><a data-track="jobs" href="careers.html" class="link-footer">Jobs</a><a data-track="branding" href="branding.html" class="link-footer">Brand</a><a data-track="newsroom" href="newsroom.html" class="link-footer">Newsroom</a><a data-track="newsroom" href="fallrelease.html" class="link-footer">Fall Release</a></div><div id="w-node-d182f768-5cb1-47e3-0150-c8832fa33102-2fa3309f"><div class="paragraph-small top-marg font-blue">Resources</div><a data-track="college" href="college.html" class="link-footer">College</a><a data-track="support" href="https://support.discord.com/hc" class="link-footer">Support</a><a data-track="safety" href="safety.html" class="link-footer">Safety</a><a data-track="blog" href="blog.html" class="link-footer">Blog</a><a data-track="feedback" href="https://support.discord.com/hc/en-us/community/topics" class="link-footer">Feedback</a><a data-track="streamkit" href="streamkit.html" class="link-footer">StreamKit</a><a data-track="creators" href="creators.html" class="link-footer">Creators</a><a data-track="community" href="community.html" class="link-footer">Community</a><a data-track="Build" href="build.html" class="link-footer">Developers</a><a data-track="Build" href="gaming.html" class="link-footer">Gaming</a><a data-track="store" href="https://discordmerch.com/evergreenfooter" target="_blank" class="link-footer">Official 3rd Party Merch</a></div><div id="w-node-d182f768-5cb1-47e3-0150-c8832fa33113-2fa3309f"><div class="paragraph-small top-marg font-blue">Policies</div><a data-track="terms" href="terms.html" class="link-footer">Terms</a><a data-track="privacy" href="privacy.html" class="link-footer">Privacy</a><a data-open-cookie-settings="true" href="#" class="link-footer">Cookie Settings</a><a data-track="guidelines" href="guidelines.html" class="link-footer">Guidelines</a><a data-track="acknowledgement" href="acknowledgements.html" class="link-footer">Acknowledgements</a><a data-track="licenses" href="licenses.html" class="link-footer">Licenses</a><a data-track="moderation" href="company-information.html" class="link-footer">Company Information</a></div></div><div class="footer-line-blue"><a data-track="logo" href="index.html" class="w-inline-block"><img src="https://assets-global.website-files.com/6257adef93867e50d84d30e2/6257d23c5fb25be7e0b6e220_Open Source Projects _ Discord-7.svg" loading="lazy" alt="" class="discord-footer"/></a><a data-track="login_footer" data-w-id="d182f768-5cb1-47e3-0150-c8832fa33126" href="app.html" class="button-white color-blue-right footer-open-discord-button footer-open-discord-button-js w-button">Sign up</a></div></div></div></div><script src="../d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c806ab.js?site=6257adef93867e50d84d30e2" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script><script src="../assets-global.website-files.com/6257adef93867e50d84d30e2/js/discord-2022.b3c6dce5b.js" type="text/javascript"></script><script>
+$('.menu-button').on('click', function() {
+  $('body').toggleClass('modal-open');
+});
+</script>
+<script src="webflow-scripts/bodyEnd.js" defer async></script>
+<script type="text/javascript" src="w/loader/loader.js" async defer></script>
+
+<script>
+  function initDownloadButton() {
+    let userAgent = window.navigator.userAgent,
+        platform = window.navigator.platform,
+        macosPlatforms = ['Macintosh', 'MacIntel', 'MacPPC', 'Mac68K'],
+        windowsPlatforms = ['Win32', 'Win64', 'Windows', 'WinCE'],
+        iosPlatforms = ['iPhone', 'iPad', 'iPod'],
+        buttonAttributes = null;
+
+    if (iosPlatforms.indexOf(platform) !== -1) {
+      buttonAttributes = {
+        text: "Download on the App Store",
+        href: "https://itunes.apple.com/us/app/discord-chat-for-games/id985746746",
+      }
+    } else if (macosPlatforms.indexOf(platform) !== -1) {
+      buttonAttributes = {
+        text: "Download for Mac",
+        href: "https://discord.com/api/download?platform=osx",
+      }
+    } else if (windowsPlatforms.indexOf(platform) !== -1) {
+      buttonAttributes = {
+        text: "Download for Windows",
+        href: "https://discord.com/api/download?platform=win",
+      }
+    } else if (/Android/.test(userAgent)) {
+      buttonAttributes = {
+        text: "Download on Google Play",
+        href: "https://play.google.com/store/apps/details?id=com.discord",
+      }
+    } else if (!os && /Linux/.test(platform)) {
+      buttonAttributes = {
+        text: "Download for Linux",
+        href: "https://discord.com/api/download?platform=linux",
+      }
+    }
+
+    let downloadEl = document.querySelectorAll<HTMLAnchorElement>('.download-button');
+  	if (downloadEl) {
+      downloadEl.forEach(function (el) {
+        el.innerText = buttonAttributes.text;
+        el.href = buttonAttributes.href;
+      });
+    }
+    
+	let downloadSidebarEl = document.querySelectorAll(".download-sidebar");
+    if (downloadSidebarEl) {
+      downloadSidebarEl.forEach(function(el) {
+        el.href = buttonAttributes.href;
+      });
+    }
+  }
+  
+  function initLogInOrOpenDiscordButton() {
+    let loginButtonText, loginRoute, signUpButtonText, signupRoute;
+    let loginIsOpenDiscordButton = true;
+    const loginLink = 'login.html';
+    const signupLink = 'register.html';
+    const openLink = 'channels/%40me.html';
+    
+    if(window.localStorage.getItem("token") != null) {
+      loginButtonText = "Open Discord";
+      loginRoute = openLink;
+      loginIsOpenDiscordButton = true;
+      
+      signUpButtonText = "Open Discord";
+      signupRoute = openLink;
+    } else {
+      loginIsOpenDiscordButton = false;
+      loginButtonText = "Login";
+      signUpButtonText = "Sign up";
+      loginRoute = loginLink;
+      signupRoute = signupLink;
+    }
+    
+    let loginEl = document.querySelectorAll(".login-button-js");
+    let footerEl = document.querySelectorAll(".footer-open-discord-button-js");
+    if (loginEl && loginEl.length > 0) {
+      loginEl.forEach(function(el) {
+        if (!loginIsOpenDiscordButton) {
+        	el.classList.add('hide-on-mobile');
+        }
+        el.innerText = loginButtonText;
+      	el.href = loginRoute;
+        if (loginIsOpenDiscordButton) {
+            el.dataset.trackNav = 'navbar-open-button';
+        }
+      });
+    }
+    if (footerEl && footerEl.length > 0) {
+      footerEl.forEach(function(el) {
+        if (window.innerWidth <= 768) {
+        	el.innerText = "Download";
+        } else {
+        	el.innerText = signUpButtonText;
+        }
+        el.href = signupRoute;
+      });
+    }
+  }
+  
+  function initSignUpOrOpenButtons() {
+    const signupLink = 'register.html';
+    const openLink = 'channels/%40me.html';
+    const isLoggedIn = window.localStorage.getItem("token") != null;
+    const buttonEl = document.querySelectorAll(".open-or-signup-js");
+    
+    if (buttonEl && buttonEl.length > 0) {
+        buttonEl.forEach(function(el) {
+            if (isLoggedIn) {
+                el.innerText = 'Open Discord';
+                el.href = openLink;
+            } else {
+                el.innerText = 'Sign up';
+                el.href = signupLink;
+            }
+        });
+    }
+  }
+  
+  initSignUpOrOpenButtons();
+  initLogInOrOpenDiscordButton();
+  initDownloadButton();
+</script>
+
+<!-- build:inlineScriptNonceTag -->
+  <script>
+  <!-- endbuild -->
+  </script>
+  <!-- section:dataLayer -->
+  <script src="assets/oneTrust/v4/scripttemplates/otSDKStub.js" type="text/javascript" charset="UTF-8" data-domain-script="04da1d72-0626-4fff-b3c6-150c719cc115"></script>
+  <!-- build:inlineScriptNonceTag -->
+  <script>
+    <!-- endbuild -->
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push({ 'allCookiesOK': false });
+  </script>
+  <!-- endsection -->
+  <!-- section:gtm -->
+  <!-- build:inlineScriptNonceTag -->
+  <script>
+  <!-- endbuild -->
+    (function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          '../www.googletagmanager.com/gtm5445.html?id=' + i + dl + '&gtm_auth=GI0g9O-54_SitcgmxQKxlA&gtm_preview=env-2&gtm_cookies_win=x'; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-N7BVC2W');
+  </script>
+  <!-- endsection -->
+
+<!--script>
+  !function(e){var t={};function n(r){if(t[r])return t[r].exports;var i=t[r]={i:r,l:!1,exports:{}};e[r].call(i.exports,i,i.exports,n);i.l=!0;return i.exports}n.m=e;n.c=t;n.d=function(e,t,r){n.o(e,t)||Object.defineProperty(e,t,{enumerable:!0,get:r})};n.r=function(e){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"});Object.defineProperty(e,"__esModule",{value:!0})};n.t=function(e,t){1&t&&(e=n(e));if(8&t)return e;if(4&t&&"object"==typeof e&&e&&e.__esModule)return e;var r=Object.create(null);n.r(r);Object.defineProperty(r,"default",{enumerable:!0,value:e});if(2&t&&"string"!=typeof e)for(var i in e)n.d(r,i,function(t){return e[t]}.bind(null,i));return r};n.n=function(e){var t=e&&e.__esModule?function(){return e.default}:function(){return e};n.d(t,"a",t);return t};n.o=function(e,t){return Object.prototype.hasOwnProperty.call(e,t)};n.p="/assets/";n(n.s=352)}({352:function(e,t,n){e.exports=n(353)},353:function(e,t,n){"use strict"
+;(function(e){Object.defineProperty(t,"__esModule",{value:!0});var n,r,i,o,u,c,l,f,s;window.GLOBAL_ENV={API_ENDPOINT:null!==(n="//discord.com/api")?n:"",API_VERSION:parseInt(null!=="9"?"9":"0"),WEBAPP_ENDPOINT:null!==(r="//discord.com")?r:"",CDN_HOST:null!==(i="cdn.discordapp.com")?i:"",RELEASE_CHANNEL:null!==(o="stable")?o:"",MARKETING_ENDPOINT:null!==(u="//discord.com")?u:"",MIGRATION_SOURCE_ORIGIN:null!==(c="https://discordapp.com")?c:"",MIGRATION_DESTINATION_ORIGIN:null!==(l="https://discord.com")?l:"",INVITE_HOST:null!==(f=e.env.INVITE_HOST)&&void 0!==f?f:"",GUILD_TEMPLATE_HOST:null!==(s=e.env.GUILD_TEMPLATE_HOST)&&void 0!==s?s:"",BRAINTREE_KEY:"",STRIPE_KEY:""};!function(){var e=document.createElement("script");e.setAttribute("src","https://discord.com/w/assets/740104ebe9cccb0184de2d7a8cdc8127e3fc4c4d/index.js");e.async=!0;document.body.appendChild(e)}()}).call(this,n(51))
+},51:function(e,t){var n,r,i=e.exports={};function o(){throw new Error("setTimeout has not been defined")}function u(){throw new Error("clearTimeout has not been defined")}!function(){try{n="function"==typeof setTimeout?setTimeout:o}catch(e){n=o}try{r="function"==typeof clearTimeout?clearTimeout:u}catch(e){r=u}}();function c(e){if(n===setTimeout)return setTimeout(e,0);if((n===o||!n)&&setTimeout){n=setTimeout;return setTimeout(e,0)}try{return n(e,0)}catch(t){try{return n.call(null,e,0)}catch(t){return n.call(this,e,0)}}}var l,f=[],s=!1,a=-1;function _(){if(s&&l){s=!1;l.length?f=l.concat(f):a=-1;f.length&&T()}}function T(){if(!s){var e=c(_);s=!0;for(var t=f.length;t;){l=f;f=[];for(;++a<t;)l&&l[a].run();a=-1;t=f.length}l=null;s=!1;!function(e){if(r===clearTimeout)return clearTimeout(e);if((r===u||!r)&&clearTimeout){r=clearTimeout;return clearTimeout(e)}try{r(e)}catch(t){try{return r.call(null,e)}catch(t){return r.call(this,e)}}}(e)}}i.nextTick=function(e){
+var t=new Array(arguments.length-1);if(arguments.length>1)for(var n=1;n<arguments.length;n++)t[n-1]=arguments[n];f.push(new h(e,t));1!==f.length||s||c(T)};function h(e,t){this.fun=e;this.array=t}h.prototype.run=function(){this.fun.apply(null,this.array)};i.title="browser";i.browser=!0;i.env={};i.argv=[];i.version="";i.versions={};function m(){}i.on=m;i.addListener=m;i.once=m;i.off=m;i.removeListener=m;i.removeAllListeners=m;i.emit=m;i.prependListener=m;i.prependOnceListener=m;i.listeners=function(e){return[]};i.binding=function(e){throw new Error("process.binding is not supported")};i.cwd=function(){return"/"};i.chdir=function(e){throw new Error("process.chdir is not supported")};i.umask=function(){return 0}}});
+//# sourceMappingURL=loader.js.map
+</script-->
+
+<script src="webflow-scripts/gdc.js"defer="" async=""></script>
+<!--script src="https://cdn.finsweet.com/files/fscalendar/calendar-invite-v1.0.min.js"></script-->
+<!--script>
+var calendarInvite = fsCalendar({
+  // class of event title
+  title: '.event-title',
+  // class of event start date
+  start: '.event-start',
+  // class of event end date
+  end: '.event-end',
+  // class of event timezone
+  timezone: '.event-timezone',
+  // class of event Address
+  address: '.event-location',
+  // class of event Description
+  description: '.event-desc',
+  // class of the cms cal item
+  eventItemClass: '.event-item-content',
+  // monitor for text translations
+  localize: true,
+});
+</script-->
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Event",
+"eventStatus": "https://schema.org/EventScheduled",
+  "name": "Discord at GDC 2023",
+  "startDate": "2023-03-20",
+  "endDate": "2023-03-24",
+"organizer": {
+        "@type": "Organization",
+        "name": "Discord",
+        "url": "https://discord.com/"
+},
+  "location": {
+    "@type": "Place",
+    "name": "GDC server",
+    "url": "https://discord.com/gdc-2023"
+  },
+  "eventSchedule": [
+    {
+      "@type": "Schedule",
+      "name": "GDC Kickoff Party!",
+      "startDate": "2023-03-20T10:00:00-07:00",
+      "endDate": "2023-03-20T10:30:00-07:00"
+    },
+    {
+      "@type": "Schedule",
+      "name": "App Directory Best Practices (Monday session)",
+      "startDate": "2023-03-20T11:00:00-07:00",
+      "endDate": "2023-03-20T11:45:00-07:00"
+    },
+    {
+      "@type": "Schedule",
+      "name": "App Directory Best Practices (Tuesday screening party)",
+      "startDate": "2023-03-21T03:00:00-07:00",
+      "endDate": "2023-03-21T03:45:00-07:00"
+    },
+    {
+      "@type": "Schedule",
+      "name": "App-Building Workshop (Tuesday session)",
+      "startDate": "2023-03-21T11:00:00-07:00",
+      "endDate": "2023-03-21T14:00:00-07:00"
+    },
+    {
+      "@type": "Schedule",
+      "name": "Activities Tournament: Groups Mallow and Graggle",
+      "startDate": "2023-03-21T15:00:00-07:00",
+      "endDate": "2023-03-21T16:00:00-07:00"
+    },
+    {
+      "@type": "Schedule",
+      "name": "App Building Workshop (Wednesday screening)",
+      "startDate": "2023-03-22T03:00:00-07:00",
+      "endDate": "2023-03-22T06:00:00-07:00"
+    },
+    {
+     "@type": "Schedule",
+      "name": "App Building Workshop (Wednesday session)",
+      "startDate": "2023-03-22T11:00:00-07:00",
+      "endDate": "2023-03-22T14:00:00-07:00"
+    },
+    {
+      "@type": "Schedule",
+      "name": "Activities Tournament: Groups Phibi and Cap",
+      "startDate": "2023-03-22T15:00:00-07:00",
+      "endDate": "2023-03-22T16:00:00-07:00"
+    },
+    {
+     "@type": "Schedule",
+      "name": "App Building Workshop (Thursday screening party)",
+      "startDate": "2023-03-23T03:00:00-07:00",
+      "endDate": "2023-03-23T06:00:00-07:00"
+    },
+    {
+   "@type": "Schedule",
+      "name": "App Directory Best Practices (Thursday session)",
+      "startDate": "2023-03-23T11:00:00-07:00",
+      "endDate": "2023-03-23T11:45:00-07:00"
+    },
+    {
+     "@type": "Schedule",
+      "name": "Activities Tournament: Semi-finals",
+      "startDate": "2023-03-23T15:00:00-07:00",
+      "endDate": "2023-03-23T16:00:00-07:00"
+    },
+    {
+    "@type": "Schedule",
+      "name": "App Directory Best Practices (Friday screening party)",
+      "startDate": "2023-03-24T03:00:00-07:00",
+      "endDate": "2023-03-24T03:45:00-07:00"
+    },
+    {
+     "@type": "Schedule",
+      "name": "Activities Tournament: Finals",
+      "startDate": "2023-03-24T15:00:00-07:00",
+      "endDate": "2023-03-24T15:30:00-07:00"
+    },
+    {
+    "@type": "Schedule",
+      "name": "GDC Closing Ceremonies",
+      "startDate": "2023-03-24T16:00:00-07:00",
+      "endDate": "2023-03-24T16:30:00-07:00"
+    }
+  ],
+  "description": "Thanks for a fantastic GDC! The games are over, but the fun continues. Hop into our official Discord Developer server to keep building apps, including mini-games! Join our Discord Developer server. Learn to build Discord apps. See schedule for details.",
+  "url": "https://discord.com/gdc-2023"
+}
+
+</script>
+
+<script nonce="MjU0LDUyLDE0MSw2MiwxMTksMTczLDIzLDE4NA==">(function(){var js = "window['__CF$cv$params']={r:'83f19a825bbf3fa1',t:'MTcwNDE4Mzg0NC4yNjkwMDA='};_cpo=document.createElement('script');_cpo.nonce='MjU0LDUyLDE0MSw2MiwxMTksMTczLDIzLDE4NA==',_cpo.src='cdn-cgi/challenge-platform/h/g/scripts/jsd/74bd6362/main.js',document.getElementsByTagName('head')[0].appendChild(_cpo);";var _0xh = document.createElement('iframe');_0xh.height = 1;_0xh.width = 1;_0xh.style.position = 'absolute';_0xh.style.top = 0;_0xh.style.left = 0;_0xh.style.border = 'none';_0xh.style.visibility = 'hidden';document.body.appendChild(_0xh);function handler() {var _0xi = _0xh.contentDocument || _0xh.contentWindow.document;if (_0xi) {var _0xj = _0xi.createElement('script');_0xj.nonce = 'MjU0LDUyLDE0MSw2MiwxMTksMTczLDIzLDE4NA==';_0xj.innerHTML = js;_0xi.getElementsByTagName('head')[0].appendChild(_0xj);}}if (document.readyState !== 'loading') {handler();} else if (window.addEventListener) {document.addEventListener('DOMContentLoaded', handler);} else {var prev = document.onreadystatechange || function () {};document.onreadystatechange = function (e) {prev(e);if (document.readyState !== 'loading') {document.onreadystatechange = prev;handler();}};}})();</script></body>
+<!-- Mirrored from discord.com/gdc-2023 by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 02 Jan 2024 08:47:35 GMT -->
+</html>

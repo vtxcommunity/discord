@@ -1,0 +1,1 @@
+(()=>{"use strict";let t=document.getElementsByClassName("custom-link");for(let e of t){let t=e.getAttribute("data-url");null!=t&&e?.addEventListener("click",(e=>{let l=e?.target;t=l.getAttribute("data-url");const r=document.createElement("a");r.setAttribute("href",t),r.setAttribute("target","_blank"),setTimeout((()=>{r.click()}),10)}))}})();

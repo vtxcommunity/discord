@@ -1,0 +1,422 @@
+<!DOCTYPE html><!-- Last Published: Tue Dec 19 2023 07:48:59 GMT+0000 (Coordinated Universal Time) --><html data-wf-domain="discordpages.webflow.io" data-wf-page="6102fadda3eb27bb56da0f57" data-wf-site="5f8dd67f8fdd6f51f0b50904">
+<!-- Mirrored from discord.com/blog/improving-our-mobile-experience by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 02 Jan 2024 08:08:57 GMT -->
+<head><meta charset="utf-8"/><title>Improving Our Mobile Experience</title><meta content="Starting today, “Discord but smol” gets a fresh set of updates for touch input on the screen that fits in your pocket. Check out everything that’s rolling out to your phone!" name="description"/><meta content="Improving Our Mobile Experience" property="og:title"/><meta content="Starting today, “Discord but smol” gets a fresh set of updates for touch input on the screen that fits in your pocket. Check out everything that’s rolling out to your phone!" property="og:description"/><meta content="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/656a67621c4ba32e7c3710fc_image14.png" property="og:image"/><meta content="Improving Our Mobile Experience" property="twitter:title"/><meta content="Starting today, “Discord but smol” gets a fresh set of updates for touch input on the screen that fits in your pocket. Check out everything that’s rolling out to your phone!" property="twitter:description"/><meta content="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/656a67621c4ba32e7c3710fc_image14.png" property="twitter:image"/><meta property="og:type" content="website"/><meta content="summary_large_image" name="twitter:card"/><meta content="width=device-width, initial-scale=1" name="viewport"/><link href="../../assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/css/discordpages.7ab087c99.css" rel="stylesheet" type="text/css"/><script type="text/javascript">!function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);</script><link href="../../assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/60ae916347747e71167e21cc_favicon.png" rel="shortcut icon" type="image/x-icon"/><link href="../../assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/5f91fae62cc821206588b837_Frame%20246.png" rel="apple-touch-icon"/><link href="rss.xml" rel="alternate" title="RSS Feed" type="application/rss+xml"/><!-- Localize integration code -->
+<script src="../../ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="../../global.localizecdn.com/localize.js"></script>
+<script src="../webflow-scripts/head.js"></script>
+<style>
+  .nav-bar-hack {
+  	bottom: 0px !important;
+    height: auto !important;
+  }
+  
+  body a.w-webflow-badge {
+    display: none !important;
+  }
+  
+  body {
+  	text-rendering: optimizeLegibility;
+  }
+  
+  @media screen and (max-width: 476px) {
+    .hide-on-mobile {
+      display: none;
+    }
+  }
+  
+  .hr-style {
+  border: 0;
+  height: 8px;
+  background-color: #F0F0F0;
+  margin: 20px 0px;
+  }
+  
+  .BlogBodyQuote {
+  grid-column: 2/-1;
+  font-size: 24px;
+  line-height: 36px;
+  padding: 0px 0px 15px 40px;
+  font-style: italic;
+  margin: 40px 0px 50px 0px;
+}
+
+.quote-text {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.quote-icon {
+  position: relative;
+  top: 16px;
+}
+
+footer.quote-footer {
+  font-size: 16px;
+  margin-top: 20px;
+  font-style: normal;
+}
+</style>
+
+<style>
+.language{
+    display:flex;
+    user-select: none;
+}
+.language .lang-container {
+    position: relative;
+}
+
+.language .lang-selector-container {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.language .locale-container{
+    display: flex;
+    align-items: center;
+}
+
+.language .flag {
+    width: 24px;
+    height: 16px;
+    margin-right: 8px;
+}
+
+.language .selector-language-name{
+    color: #fff;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.language .arrow-icon{
+    padding-left: 8px;
+}
+
+.language .lang-dropdown-container {
+    z-index: 10;
+    bottom: 100%;
+    margin-bottom: 8px;
+    position: absolute;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 1px 1px rgb(0 0 0 / 10%);
+    overflow: hidden;
+    display: none;
+}
+
+.language .lang-dropdown {
+    max-height: 320px;
+    min-width: 150px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    overscroll-behavior: contain;
+}
+
+.language .dropdown-item{
+    padding: 8px;
+}
+
+.language .dropdown-clickable{
+    cursor: pointer;
+}
+
+.language .dropdown-language-name{
+    color: #23272a;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.flag-ru{
+    content:url(../../assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/6321cb4da57001e8f59b8a77_62cb46f39e6ac4c46ce39566_ru.png);
+}
+
+.flag-bg{
+    content:url(../../assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/6321cdbc0dc0fb5f55e3098f_6257c2a1e7544e303083b2b1_bolg.png);
+}
+.flag-cs{
+    content:url(../../assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/6321cb4c83827a1284afe239_62cb46f1254305732a01676d_cs.png);
+}
+.flag-da{
+    content:url(../../assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/6321cb4ad6ee377e0df4cde6_62cb46f16128094022db6768_da.png);
+}
+.flag-de{
+    content:url(../../assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/6321cb4aa35fe71fedf5e95f_62cb46f1c50496ce73c40d99_de.png);
+}
+.flag-en-GB {
+    content:url("https://assets-global.website-files.com/6257adef93867e50d84d30e2/62d01c2078d11b68a1633276_Rectangle 1 (3).svg");
+}
+.flag-el{
+    content:url(../../assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/6321cb4ca5700115ec9b8a67_62cb46f17c26b5fe5a53876f_el.png);
+}
+.flag-en-US{
+    content:url(../../assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/6321cdbc488f5f603e7ecd2a_6257bf8b5ba300233705a542_en.png);
+}
+.flag-en{
+    content:url(../../assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/6321cdbc488f5f603e7ecd2a_6257bf8b5ba300233705a542_en.png);
+}
+.flag-es{
+    content:url(../../assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/6321cb4b7670687b935aaed4_62cb46f14edab1b0029593fc_es-ES.png);
+}
+.flag-fi{
+    content:url(../../assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/6321cb48951dec0cce94a2b1_62cb46f1921c0cf82fc59da7_fi.png);
+}
+.flag-fr{
+    content:url(../../assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/6321cb4a01339d451d474860_62cb46f1544a7ab7c66e9ccb_fr.png);
+}
+.flag-hi{
+    content:url(../../assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/6321cb47b3070262fdccd2a6_62cb46f13fcb6e76c05b504e_hi.png);
+}
+.flag-hr{
+    content:url(../../assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/6321cb4764813ee14c33c45f_62cb46f1aeebe9064763c90c_hr.png);
+}
+.flag-hu{
+    content:url(../../assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/6321cb486b18c7334c564b9a_62cb46f19e6ac41dcce39561_hu.png);
+}
+.flag-it{
+    content:url(../../assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/6321cb47fcf6b11ce186dd29_62cb46f1bd099a25f8f77ea4_it.png);
+}
+.flag-ja{
+    content:url(../../assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/6321cb49fa4234bc13a595aa_62cb46f1e819841940bec47d_ja.png);
+}
+.flag-ko{
+    content:url(../../assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/6321cb4b6b18c7266d564ba3_62cb46f125430509b9016776_ko.png);
+}
+.flag-lt{
+    content:url(../../assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/6321cb4bc5fa8c17a80ae4c4_62cb46f14edab152b8959405_lt.png);
+}
+.flag-nl{
+    content:url(../../assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/6321cb4d6b18c71a53564bac_62cb46f3e00ff80959abff2a_nl.png);
+}
+.flag-no{
+    content:url(../../assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/6321cb4d29670fb8a9998a06_62cb46f37c26b5e22453877d_no.png);
+}
+.flag-pl{
+    content:url(../../assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/6321cb4fd9e48ce2224e71b3_62cb46f3c504963019c40db7_pl.png);
+}
+.flag-pt-BR{
+    content:url(../../assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/6321cb4d41e0514ceaeb0814_62cb46f3d809bc2503e62bec_pt-BR.png);
+}
+.flag-ro{
+    content:url(../../assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/6321cb4b7b2666d9520e434e_62cb46f36e94d725ce411ab6_ro.png);
+}
+.flag-sv{
+    content:url(../../assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/6321cb5036a202f7044eb402_62cb46f49e6ac47674e39567_sv-SE.png);
+}
+.flag-th{
+    content:url(../../assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/6321cb502ab71d0c254b8e0c_62cb46f465c529bf26e211a1_th.png);
+}
+.flag-tr{
+    content:url(../../assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/6321cb4f41e0515a89eb082a_62cb46f4e819848178bec4d1_tr.png);
+}
+.flag-uk{
+    content:url(../../assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/6321cb4f36a20273d04eb401_62cb46f37c26b54f6a53877f_uk.png);
+}
+.flag-vi{
+    content:url(../../assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/6321cb4f00801f3750f4834e_62cb46f4e819840d89bec4d2_vi.png);
+}
+.flag-zh-Hans{
+    content:url(../../assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/6321cb5010e73af938ef607e_62cb46f49e6ac45f35e39568_zh-CN.png);
+}
+.flag-zh-TW{
+    content:url(../../assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/6321cb4fd354ea61ac8db41c_62cb46f33fcb6ea5c95b5069_zh-TW.png);
+}
+</style>
+
+<style>
+.btn-wrapper a {
+  color: #fff ;
+}
+
+/*
+strong {
+  font-weight: 700!important;
+  font-size: 32px!important;
+}
+*/
+</style>
+
+</head><body><div style="background-color:#5865f2" class="header-blue-blog"><div data-w-id="268ebfa3-e656-b800-3b97-3f7bdfa2ec4d" class="blog-navbar"><a href="../blog.html" class="blog-brand-copy w-nav-brand"><img src="https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/613b8fc3834b2bd42157bc04_blogwhite.svg" loading="lazy" alt="Discord"/></a><div data-collapse="medium" data-animation="over-right" data-duration="400" data-easing="ease" data-easing2="ease" role="banner" class="navbar-5 w-nav"><div class="container-790 w-container"><nav role="navigation" class="blog-nav w-nav-menu"><div data-delay="100" data-hover="true" class="w-dropdown"><div class="w-dropdown-toggle"><img src="https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/635157e8f94a8580bcbb3e32_Shape.svg" loading="lazy" alt="" class="icon mobile"/><img src="https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/614275ac3d35134cb2a96b63_down.svg" loading="lazy" alt="" class="icon white"/><div class="blog-nav-item">COLLECTIONS</div></div><nav class="dropdown-list w-dropdown-list"><div class="w-dyn-list"><div role="list" class="w-dyn-items"><div role="listitem" class="w-dyn-item"><a href="../category/community.html" class="dropdown-link w-dropdown-link">Community</a></div><div role="listitem" class="w-dyn-item"><a href="../category/company.html" class="dropdown-link w-dropdown-link">Discord HQ</a></div><div role="listitem" class="w-dyn-item"><a href="../category/engineering.html" class="dropdown-link w-dropdown-link">Engineering &amp; Developers</a></div><div role="listitem" class="w-dyn-item"><a href="../category/how-to-discord.html" class="dropdown-link w-dropdown-link">How to Discord</a></div><div role="listitem" class="w-dyn-item"><a href="../category/safety.html" class="dropdown-link w-dropdown-link">Policy &amp; Safety</a></div><div role="listitem" class="w-dyn-item"><a href="../category/product.html" class="dropdown-link w-dropdown-link">Product &amp; Features</a></div></div></div></nav></div><a href="../blog-featured.html" class="blog-nav-item w-nav-link">Featured</a><a href="../index.html" class="blog-nav-item w-nav-link">Discord.com</a><div class="w-embed"><form action="https://discord.com/blog/search" class="form-search w-form" style="display: flex">
+<input type="search" class="text-field w-input" maxlength="256" name="query" placeholder="Search…" id="search" required="">
+<input type="submit" value="" class="btn-search w-button">
+</form>
+
+<style> 
+form.form-search.w-form:focus-within {
+    border: 1px solid #fff;
+}
+</style></div><form action="https://discord.com/search" class="form-search w-form"><input type="search" class="text-field w-input" maxlength="256" name="query" placeholder="Search…" id="search" required=""/><input type="submit" value="" class="btn-search w-button"/></form></nav><div class="w-nav-button"><img src="https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/60b6ad79b75c18f025626c71_menuicon.svg" loading="lazy" alt="Menu" class="image-14"/></div></div></div></div></div><div style="background-color:#5865f2" class="blog-home-hero-header"></div><div class="blog-featured-section"><div class="blog-hero-container hero-offset w-dyn-list"><div role="list" class="collection-list w-dyn-items"><div role="listitem" class="collection-item-4 w-dyn-item"><div class="div-block-15"><img src="../../assets-global.website-files.com/5f9072399b2640f14d6a2bf4/656a67621c4ba32e7c3710fc_image14.png" loading="lazy" alt="" sizes="(max-width: 767px) 92vw, (max-width: 991px) 90vw, (max-width: 1279px) 91vw, (max-width: 1919px) 92vw, 1368px" srcset="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/656a67621c4ba32e7c3710fc_image14-p-500.png 500w, https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/656a67621c4ba32e7c3710fc_image14-p-800.png 800w, https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/656a67621c4ba32e7c3710fc_image14-p-1080.png 1080w, https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/656a67621c4ba32e7c3710fc_image14-p-1600.png 1600w, https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/656a67621c4ba32e7c3710fc_image14.png 1800w" class="image-19"/></div><div class="blog-hero-heading-section"><a href="../category/product.html" class="blog-hero-category">Product &amp; Features</a><a href="improving-our-mobile-experience.html" aria-current="page" class="blog-hero-heading w--current">Improving Our Mobile Experience</a></div></div></div></div></div><div class="blog-post-container new"><div class="column-wrapper w-row"><div class="column-3 w-col w-col-2 w-col-stack"><div class="the-author-section"><img alt="" loading="lazy" width="72" src="../../assets-global.website-files.com/5f9072399b2640f14d6a2bf4/65663d125a02ae027e8e3acb_Nov%2028%20Screenshot.png" class="image-22"/><div><div class="blog-post-author">Francesco Polizzi</div><div class="blog-post-author-name">December 5, 2023</div></div></div><div class="tag-section w-condition-invisible"><div class="divider-bar-copy"></div><div class="tags-sections-head">Tags</div><div class="collection-list-wrapper-2 w-dyn-list"><div class="empty-state w-dyn-empty"></div></div></div></div><div class="column-4 w-col w-col-8 w-col-stack"><div id="heading-1" class="rich-wrapper"><div class="blog-post-content w-richtext"><p>“Take the Discord you know and love, squish it down to the size of a phone, and take it with you anywhere” — that’s the gist of how the Discord mobile app has worked since its release in 2015. Back then, our focus was on building great products for people who play games on PC, with mobile serving as a companion app for when you were AFK.</p><p>Over time, the amount of *<em>stuff</em>* that Discord can do has grown exponentially. And yet, the mobile app was forced to just shove it all in a <em>tiiiny</em> version of the desktop app. The world has also changed — as more of you spent time using Discord on the go, what was lacking on mobile became more apparent. It was missing standard features that people have come to expect from using other mobile messaging and communication apps and had speed and reliability issues.</p><p>So about a year ago, we started a team to tackle an important mission: build a better mobile app. Our first order of business? Adding an easter egg, obviously. We added a new experimental build, accessed by tapping and holding on the ✨ sparkle emoji in any chat on mobile.</p><p>As we built, we listened to the ✨ sparks of feedback that came via mobile app reviews, X, and in-app surveys from those who got to try it out early. And thanks to your feedback, we implemented many highly-requested improvements like adding global DM search, simplifying media sharing, reducing app-open time by 43% on iOS and 55% on Android, and letting you access more messages when offline. We also experimented with some more controversial changes, like a re-envisioned server tab with more customization options, and a dock to pin your servers. Some of those ideas worked, and others weren’t as well received (yes… we also read Reddit). </p><p>Starting today we’re excited to share that “Discord but <em>smol</em>” is evolving so that you can take advantage of what makes your phone so great. Rather than retrofitting designs meant for mice and keyboards, it’s a fresh look intended for the touchscreen that fits in your pocket. It’s a faster, more reliable app than before, with new features that help you and your friends chat and hang out on the go, like voice messages, and a 25 MB free file upload limit. And most importantly, this time <strong>we designed mobile as its own independent experience</strong> — as something you can use as your main Discord app when you’re on the go, not as something you use <em>alongside</em> the desktop app.</p><p>I’m excited to share with you today where we landed, what we learned, and what’s next for Discord on mobile.</p><div class="w-embed"><div class="btn-wrapper"><a data-track="https://discord.com/mobile?utm_source=blog&utm_medium=website&utm_campaign=2023-12_mobile&utm_content=--t%3Apm" href="../mobiled6b8.html?utm_source=blog&amp;utm_medium=website&amp;utm_campaign=2023-12_mobile&amp;utm_content=--t%3Apm" class="btn-blog w-button" target="_blank"> See everything that’s new</a></div></div></div></div><div class="btn-wrapper w-condition-invisible"><a href="#" class="btn-blog w-dyn-bind-empty w-button"></a></div><div id="heading-2" class="rich-wrapper"><div class="blog-post-content w-richtext"><h2><strong>Find Your Stuff<br/></strong></h2><p>The first thing you’ll notice when you launch the updated mobile experience is a set of new <strong>Navigation Tabs</strong> on the bottom. They’re there to help you get to what’s most important: your conversations. Specifically, Servers and Messages now live in separate tabs.</p><p>What was once hidden behind a sliding motion is now front-and-center — the moment you open the app, your <strong>Servers</strong>, <strong>Messages</strong>, <strong>Notifications,</strong> and the <strong>You </strong>tab are accessible.  </p><h3>Servers</h3><p>Earlier this year, we began experimenting with a revamped layout for navigating your servers. One of our ideas was to display your servers horizontally in a dock, similar to your phone’s home screen. We also tinkered with how the channel list looked, adding message previews, emojis to represent each channel, and more padding between them. But as we tested these changes, we heard feedback from you:</p><ul role="list"><li>While the horizontal layout of servers was more familiar and closer to your thumb, it made fewer servers visible at once, which was a pain for those chatting in more than a handful of servers.</li><li>Although additional customization options in the channel list made the server feel more personal and alive, they also collectively made the tab feel more cluttered and harder to scan at a glance.</li></ul><p>Keeping your feedback in mind, we went back to the drawing board to find ways to organize your chats without making the app feel harder to use. The design we are bringing to users today still separates Servers and Messages into different tabs but retains the vertical server navigation you’ve grown used to. Behold: </p><figure class="w-richtext-figure-type-image w-richtext-align-center" style="max-width:375px" class="w-richtext-align-center w-richtext-figure-type-image"><div><img src="../../assets-global.website-files.com/5f9072399b2640f14d6a2bf4/656a60420a03b885cb7c9d21_hVRj12rlKlDP3WQczGGKNcLj-6nlrYUY61a7nkeFgAvv3VGyK2Y8kGMgFrSMnajyXNOkvzqhsrEIvaP-d9BhrhGpCtvolytN3oseO5DPx1xuQz6xWhVlfBiCWsU0EkParNDUWUdf1UbHY" alt="A preview of the new Servers tab."/></div></figure><p>Of course, we’re not done there. We’ll continue iterating on the new Servers tab to make it more ergonomic without losing quick access to servers and customizable without feeling overwhelming. We’ll also explore ways to give you more visibility into what your server pals are doing so it’s easier for you to jump in and hang out.</p><h3>Messages</h3><p>All your Direct Messages (DMs) and Group Direct Messages (GDMs) now live here. Above your conversations, you can see what all your friends are doing at the moment, whether they’re in a voice channel together, playing a game or Activity, or just listening to something on Spotify. You can also favorite specific DMs or GDMs so they’ll always appear at the top of your Messages tab.</p><p>‍</p><figure class="w-richtext-figure-type-image w-richtext-align-center" style="max-width:375px" class="w-richtext-align-center w-richtext-figure-type-image"><div><img src="../../assets-global.website-files.com/5f9072399b2640f14d6a2bf4/656a6042c6f89cc308e796a4_bxhpCx1oDftnfdthYVhDHVDmv9Bf6vPTPE-PKnw5YgwvzhTG-YwfEcdkolavbirC3k6vqKld7M1s6ZQi4YH2d0KCYZkJvEItHcv4DMq8Pu01yzFxvyXCPFYg_GbEQardpQuBJrpgZRQVT" alt="A preview of the new Servers tab."/></div></figure><p>We’ve supercharged search so you can scour through all of your messages, pins, files, and attachments, and pinned messages, straight from the Search bar. <strong>You no longer have to search for a particular pinned message in each DM individually — one search bar looks through it all!</strong> </p><figure class="w-richtext-figure-type-image w-richtext-align-center" style="max-width:375px" class="w-richtext-align-center w-richtext-figure-type-image"><div><img src="../../assets-global.website-files.com/5f9072399b2640f14d6a2bf4/656a60423734ba889bff349b_LM-KQ39LJXULU8YoJy5oJXNAsvS1b1L7QRUa26JGoK4DBeK5qIsE2jQ_eta83PZahC00RRAWU_QsZVdisFvFCLZWbJ_XIG2njbsL19RIjsKnUYtWM6dq23CAW2ahjNWIIgfzaxvDczLSY" alt="A preview of the new Search functionality."/></div></figure><p>We gave some much-needed attention to the Channel and G/DM Detail pages to let you find what you need in the chat faster. Quickly see every member, shared media, links, pins, and more from a single location. Find something specific using Search, or scroll through memory lane in the Media tab. </p><figure class="w-richtext-figure-type-image w-richtext-align-center" style="max-width:375px" class="w-richtext-align-center w-richtext-figure-type-image"><div><img src="../../assets-global.website-files.com/5f9072399b2640f14d6a2bf4/656a60429a225c292d078113_-9arQmJld2wyjT5rYrwDuMwKcjCh1E0PcbqydoR9qLTnv-COE4nA8yujYk_9Xkq6qRqOYjZepo6cXJJ1TosYltI2a-a6yYg3Siz0ySR9WLcPhpxX2uzE8sza3beVM-p4JsLQNebckPvkj" alt="A preview of the new Group DM tab."/></div></figure><p>Gone are the days of creating a new Group DM every time you want to chat with the same 3 people. We made it faster and easier to create a Group DM, and if you happen to already have one with the same combination of friends, we’ll let you know! </p><figure class="w-richtext-figure-type-image w-richtext-align-center" style="max-width:375px" class="w-richtext-align-center w-richtext-figure-type-image"><div><img src="../../assets-global.website-files.com/5f9072399b2640f14d6a2bf4/656a60423918e1deeada2d49_bqcEb3HVPENwtA_Lxv3B_oV0P7ZTV8NyR6HB41ppO2IhBI-fuPv0vez5-aJEuo7vo_rF4MujG9NfofC1csXHHrxA5wdRIWlabBs8FdnoTn02mBnos_W3Ll7-eNoWwXxfK_uv1FPI25uwW" alt="A preview of the new experience when creating a new Group DM."/></div></figure><p>In addition to long-pressing on a message to reply to it, you can<strong> </strong>now<strong> </strong>quickly<strong> Swipe to Reply</strong> to any message posted in chat. It’s perfect for immediately typing “alksdjka;alsjdkklfa” after a hot take that’s flat-out <em>incorrect</em>. Previously, swiping from right to left across a channel or G/DM would take you to see the details of that chat, aka the member list. We are currently working on ways to add quick access to the member list, and in the meantime, you can tap on the name of the G/DM or channel at the top of the screen to access the member list.</p><figure class="w-richtext-figure-type-image w-richtext-align-center" style="max-width:375px" class="w-richtext-align-center w-richtext-figure-type-image"><div><img src="../../assets-global.website-files.com/5f9072399b2640f14d6a2bf4/656a6042df822be86e1de7bb_dtU0k1yFh1CTBH_6Tsmg0T1i0hWx8D0sppvPfx21Giy_GdfFYavl-fpeV28wq-0TxnGS5C_iiP0ygjwI6GmT4EHETCu6Sg8XNPNJDpwDYV8yNXYblDR8LVi8me_NifkLv-oK0zOXvi0Tg" alt="A preview of the new Swipe-to-Reply feature."/></div></figure><h3>Notifications</h3><p>Anytime something new happens, you can jump here to stay up to date on all the times you’ve been @mentioned, just like before. In addition to @mentions, any Server Events, updates on Friend Requests, and replies to your messages will show up here. </p><figure class="w-richtext-figure-type-image w-richtext-align-center" style="max-width:375px" class="w-richtext-align-center w-richtext-figure-type-image"><div><img src="../../assets-global.website-files.com/5f9072399b2640f14d6a2bf4/656a6042d5918c11d1d96359_aVslPvmv52v-xcsYM7wGdynd3FHxxRaGe6xM_wtNrCvYGpZaKV3J8peMmsBEXu9cSSJN0Eln0fGBpb9DJwn0OGHgzGBc4NeSBmzkx2cX7avgAhwqx_jlHQxl4lZD6yvlU1Be7c_kci15W" alt="A preview of the new Notifications tab."/></div></figure><p>Best of all, <strong>every notification is actionable</strong>: tap a @mention, and you’ll go straight to where it was posted. New friend accepted your request? Tap that notification and you’ll be brought to your DM with them. Server event started? Tap that to jump to the server the event is taking place in. To sum it up, the Notifications tab works like this: If anything pops up there, you can do something with it. </p><p>We also made it so that notifications auto-clear as soon as you read them so you don’t have to waste time tapping to clear them.</p><h3>You</h3><p>Represented by your picture-perfect profile icon (lookin’ great, btw), the You tab is where you’ll be able to see what your profile looks like at any time. <strong>Change your profile and status, upload a new profile icon, access your account settings, and find your friends list</strong> right here. If you want to get to settings quickly, you can also double-tap the You tab icon at the bottom of the screen.</p><figure class="w-richtext-figure-type-image w-richtext-align-center" style="max-width:375px" class="w-richtext-align-center w-richtext-figure-type-image"><div><img src="../../assets-global.website-files.com/5f9072399b2640f14d6a2bf4/656a60438f209f99725e947b_O2MG6ALQmqy9OI5CEZTEIyFCTQmDqidVQM-J6uH9yqrmRk-NhoguoVjthlhiK_EVgZhHuMjYvUXEzETvJGs2nXwJ4G_L67AuV-b1k-VtS80RSXU9bmHOymr42CuEnTRsTZuQkCQfvs87j" alt="A preview of the new You tab."/></div></figure><p>Plus, if you need to get a particular setting at any time, the <strong>User Settings page now has a search bar</strong>! Perfect for when you know exactly what you want to adjust but aren’t sure where to find it. </p><figure class="w-richtext-figure-type-image w-richtext-align-center" style="max-width:400px" class="w-richtext-align-center w-richtext-figure-type-image"><div><img src="../../assets-global.website-files.com/5f9072399b2640f14d6a2bf4/656a60424b9b42a827f6f62b_NwFl7YMLYGKgsNZS40-YL4cikvc6RDldOcL-RK5Pxz-kCCCnBl5FC8TeIxYvsMQHdiEC239hm1hZRX50XoXC9mQvbJK9aZfESKjuAG0IKiaS3KywzN4L88p52_AgOsZTT-3_5y-K9G420" alt="A preview of the new search functionality in User Settings."/></div></figure></div></div><div id="heading-3" class="rich-wrapper"><div class="blog-post-content w-richtext"><h2><strong>Midnight Theme <br/></strong></h2><p>Because you asked (and asked, and asked), we created a new Midnight theme, which is pure black to save your battery and your eyes. Everyone can freely utilize the new Midnight theme, where chat spaces will be on fully-black backgrounds — great for saving a little bit of battery on smartphones with OLED screens. We weren’t leaving you in the dark about it, we brought the dark to YOU. </p><figure class="w-richtext-figure-type-image w-richtext-align-center" style="max-width:375px" class="w-richtext-align-center w-richtext-figure-type-image"><div><img src="../../assets-global.website-files.com/5f9072399b2640f14d6a2bf4/656a60cf4e8e0d4b3c44bfa0_Fa-DEWmCgbgImdZBxG2mx3TkwAIqFGkzH3s0gItWhRdrYX51JkG25TcrGtg7ecr-z1SlF6XRQlRbCFezsikFK_3mLHldtwIMy1GJKJKigKclpInNdyA2ueLOft_jOmvbUSgwEEuAVMH3M" alt="A preview of the new Midnight theme."/></div></figure></div></div><div id="heading-4" class="rich-wrapper"><div class="blog-post-content w-richtext"><h2><strong>Better Media Sharing<br/></strong></h2><p>Now your #travel-pics channel can go big. With the improvements we made earlier this year to <strong>media sharing, </strong>you can select even more pics and videos at once, even the high-quality ones (up to 25 MB), and upload away. Fellow explorers can view it in a neatly organized grid and swipe between uploads while seeing the cool panda fact message you sent along. Preview exactly what image you’re attaching to your messages without having to do one first before the other. </p><p>When you add multiple images to your message, they’ll be organized in a gallery-style view instead of embedding in their full size — gone are the days of scrolling for hours because your friend decided to share two phone screenshots with every message they sent.</p><figure class="w-richtext-figure-type-image w-richtext-align-center" style="max-width:375px" class="w-richtext-align-center w-richtext-figure-type-image"><div><img src="../../assets-global.website-files.com/5f9072399b2640f14d6a2bf4/656a60dcc6f89cc308e81feb_JXe0YoHOFj6g2jI_b2l6uPebdAeCquJumeoY2TO3LEz_zNCqRCXmMgJiWFl0ffaDBDInWzWEu7Imzfr6il3CrnLHjnD0TsHr_I6h8NFm2rPVEAcwKm63xesv6YNpR4hvr1vXh8fw9oMHr" alt="A preview of the new Media uploading experience."/></div></figure></div></div><div id="heading-5" class="rich-wrapper"><div class="blog-post-content w-richtext"><h2><strong>Voice &amp; Video UI<br/></strong></h2><p>We also updated the UI on voice and video calls to make the space more cozy for you and your friends. Now you can all enjoy a more comfortable virtual call with more intuitive interactions when you’re on the go.</p><figure class="w-richtext-figure-type-image w-richtext-align-center" style="max-width:375px" class="w-richtext-align-center w-richtext-figure-type-image"><div><img src="../../assets-global.website-files.com/5f9072399b2640f14d6a2bf4/656a60f12bb7f524b9fcea72_OlSyt3oNWJUrSCj349lqaOOzOBN03XN2E_fmWT8LhC2PttKlHouWhbETOQOrjzzWEP_vXx-BKcFfVYC8_Fwz5M2vzvVm_-BQXTViR_frMAgD2Uk1JDNDGIXbzJpN5lVYUvYlPuYDO8iLu" alt="A preview of the new Voice &amp; Video call experience."/></div></figure></div></div><div id="heading-6" class="rich-wrapper"><div class="blog-post-content w-richtext"><h2><strong>So Fast, So Smooth<br/></strong></h2><p>None of this would matter if the app didn’t excel at what’s most important: getting you to your conversations faster. So yeah, it’s faster. Much faster.</p><p>How much faster? <strong>We’ve reduced app open time by 55% on Android and 43% on iOS.</strong> When hopping between channels and chats, the mobile app now uses 4 <em>times</em> <em>less</em> data when loading up for the first time, and keeps your most recent messages cached in the background. We also cut the crash rate in half this year for Android users. PROGRESS!!!</p><p>‍</p><figure class="w-richtext-figure-type-image w-richtext-align-center" style="max-width:" class="w-richtext-align-center w-richtext-figure-type-image"><div><img src="../../assets-global.website-files.com/5f9072399b2640f14d6a2bf4/656a6101dddcec0d0cb174bc_C3YPHpR0qUAxOX_LlGR-SC1V-lh4t8Nh1Y8Tb3PW_tgGFRVRdiMdvTo0iW9N7-EKIlkJkkLrAVu7liPX0tKu-v-YPoi6DxtkC8kwKWmBCttEcbOaFOJZ7vYCse4uF-nvV_TLcoebqweC0" alt="An illutration of Wumpus running fast, representing the speed of the new Mobile experience."/></div></figure><p>When you’re hopping between conversations in your servers and DMs, the mobile app will now store the recent messages of up to 700 text channels and DMs, letting them load quicker as you navigate your communities. Scrolling up and down channels to catch up on the conversation is better as well, with background improvements that let you scroll faster, without having to wait for things to “buffer.” </p></div></div><div id="heading-7" class="rich-wrapper"><div class="blog-post-content w-richtext"><h2><strong>So Update Your App and See What’s New Today!<br/></strong></h2><p>With more ways to find your stuff and customize your experience, plus countless performance improvements, Discord on your phone is about to be better. We couldn’t have made it as great as it is without the feedback of those who tried it out early, so to those who took the time to submit their feedback: thank you. </p><p>And we’re not done yet! Now that these improvements are available to all users, it’s time to say “adiós” to the ✨ sparkle emoji and begin addressing additional improvements that you’ve asked for, including:</p><ul role="list"><li>Adding quick access to the member list for a server</li><li>Providing even better search filters so you can find what you’re looking for faster</li><li>Giving you more control over how compact lists and messages appear across your app</li><li>Continually improving the performance and stability of our app so you can spend more time connecting with your friends on the go</li></ul><p>Want a more comprehensive overview of our latest updates, complete with a dancing wumpus? You can see everything that’s new at <a href="../mobiled6b8.html?utm_source=blog&amp;utm_medium=website&amp;utm_campaign=2023-12_mobile&amp;utm_content=--t%3Apm">discord.com/mobile</a>, or check out our <a href="https://support.discord.com/hc/articles/12654190110999">Help Center</a> article! </p><div class="w-embed"><div class="btn-wrapper"><a data-track="https://discord.com/mobile?utm_source=blog&utm_medium=website&utm_campaign=2023-12_mobile&utm_content=--t%3Apm" href="../mobiled6b8.html?utm_source=blog&amp;utm_medium=website&amp;utm_campaign=2023-12_mobile&amp;utm_content=--t%3Apm" class="btn-blog w-button" target="_blank">See What's New with Mobile </a></div></div><p>And just because the ✨ sparkle emoji shortcut is gone doesn’t mean you can’t help give us another spark of inspiration — if you want to give any feedback or ideas and prefer trying it out on your desktop, hop on over to our <a href="https://support.discord.com/hc/en-us/community/topics">Feedback Forum</a> or send us a “post” on the platform formerly known as <a href="https://twitter.com/discord">Twitter</a>.</p></div></div><div id="heading-8" class="rich-wrapper"><div class="blog-post-content w-dyn-bind-empty w-richtext"></div></div><div id="heading-9" class="rich-wrapper"><div class="blog-post-content w-dyn-bind-empty w-richtext"></div></div><div id="heading-10" class="rich-wrapper"><div class="blog-post-content w-dyn-bind-empty w-richtext"></div></div></div><div class="column-desctop w-col w-col-2 w-col-stack"><div class="rich-content-right"><div class="paragraph-medium bot-marg">Contents</div><a href="#heading-1" class="title-menu-anchor">Intro</a><a href="#heading-2" class="title-menu-anchor">Better Navigation</a><a href="#heading-3" class="title-menu-anchor">Updated Night Mode</a><a href="#heading-4" class="title-menu-anchor">Better Media Sharing</a><a href="#heading-5" class="title-menu-anchor">Refreshed Voice &amp; Video</a><a href="#heading-6" class="title-menu-anchor">Plus, It Loads Faster</a><a href="#heading-7" class="title-menu-anchor">Update and Try Today!</a><a href="#heading-8" class="title-menu-anchor w-dyn-bind-empty"></a><a href="#heading-9" class="title-menu-anchor w-dyn-bind-empty"></a><a href="#heading-10" class="title-menu-anchor w-dyn-bind-empty"></a></div></div></div><div class="divider-bar"></div><div class="blog-column w-row"><div class="w-col w-col-3 w-col-medium-6"><div class="author-title">THE AUTHOR</div></div><div class="w-col w-col-9 w-col-medium-6"><div class="the-author-section footer"><img alt="" loading="lazy" width="47" src="../../assets-global.website-files.com/5f9072399b2640f14d6a2bf4/65663d125a02ae027e8e3acb_Nov%2028%20Screenshot.png" class="blog-post-author-image-footer"/><div><div class="blog-post-author-footer">Francesco Polizzi</div><div class="blog-post-author-desc">Group Product Manager &amp; Wumpus aficionado at Discord.</div></div></div></div></div><div class="divider-bar"></div><div><div class="author-title">MORE FROM</div><div class="category-title-footer">Product &amp; Features</div><div class="footer-more-from w-dyn-list"><div role="list" class="featured-small-list w-dyn-items w-row"><div role="listitem" class="collection-item-small blog w-dyn-item w-col w-col-4"><a href="discord-update-october-19-2023-changelog.html" class="link-block-4 w-inline-block"><img src="../../assets-global.website-files.com/5f9072399b2640f14d6a2bf4/654409dbbf40922256139a9a_Fall_October.png" loading="lazy" alt="" class="blog-featured-small-image"/></a><a href="../category/product.html" class="blog-hero-category">Product &amp; Features</a><a href="discord-update-october-19-2023-changelog.html" class="link-block-20 w-inline-block"><div class="blog-featured-title-small">Discord Update: October 19, 2023 Changelog</div></a></div><div role="listitem" class="collection-item-small blog w-dyn-item w-col w-col-4"><a href="avatar-decorations-collect-and-keep-the-newest-styles.html" class="link-block-4 w-inline-block"><img src="../../assets-global.website-files.com/5f9072399b2640f14d6a2bf4/6514773178cb945e3c97705b_Discord_Collectible_BlogHeader%20Banner_V6_RESIZED.png" loading="lazy" alt="" sizes="(max-width: 767px) 83vw, (max-width: 991px) 29vw, (max-width: 1439px) 30vw, 434.6625061035156px" srcset="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/6514773178cb945e3c97705b_Discord_Collectible_BlogHeader%20Banner_V6_RESIZED-p-500.png 500w, https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/6514773178cb945e3c97705b_Discord_Collectible_BlogHeader%20Banner_V6_RESIZED-p-800.png 800w, https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/6514773178cb945e3c97705b_Discord_Collectible_BlogHeader%20Banner_V6_RESIZED-p-1080.png 1080w, https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/6514773178cb945e3c97705b_Discord_Collectible_BlogHeader%20Banner_V6_RESIZED-p-1600.png 1600w, https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/6514773178cb945e3c97705b_Discord_Collectible_BlogHeader%20Banner_V6_RESIZED.png 1800w" class="blog-featured-small-image"/></a><a href="../category/product.html" class="blog-hero-category">Product &amp; Features</a><a href="avatar-decorations-collect-and-keep-the-newest-styles.html" class="link-block-20 w-inline-block"><div class="blog-featured-title-small">Avatar Decorations &amp; Profile Effects: Collect and Keep the Newest Styles</div></a></div><div role="listitem" class="collection-item-small blog w-dyn-item w-col w-col-4"><a href="discord-update-september-13-2023-changelog.html" class="link-block-4 w-inline-block"><img src="../../assets-global.website-files.com/5f9072399b2640f14d6a2bf4/650233ad5dcf4b6825522e09_Fall_September.png" loading="lazy" alt="" class="blog-featured-small-image"/></a><a href="../category/product.html" class="blog-hero-category">Product &amp; Features</a><a href="discord-update-september-13-2023-changelog.html" class="link-block-20 w-inline-block"><div class="blog-featured-title-small">Discord Update: September 13, 2023 Changelog</div></a></div></div></div></div></div><div class="footer-black"><div class="container-1180px-2"><div class="w-layout-grid grid-footer"><div id="w-node-_4154f574-5821-8ddb-f6fc-12aae7b6c861-e7b6c85e" class="vertical-flex"><div data-hover="false" data-delay="0" class="dropdown-3 w-dropdown"><div class="dropdown-toggle w-dropdown-toggle"><img src="https://assets-global.website-files.com/6257adef93867e50d84d30e2/6257bee91e6309a5a6f6b994_arrow.svg" loading="lazy" alt="" class="arrow"/><div>English, USA</div></div><nav class="dropdown-list-5 w-dropdown-list"><a href="#" class="dropdown-link-2 w-dropdown-link">български</a><a href="#" class="dropdown-link-2 czech w-dropdown-link">Čeština</a><a href="#" class="dropdown-link-2 dansk w-dropdown-link">Dansk</a><a href="#" class="dropdown-link-2 deutsch w-dropdown-link">Deutsch</a><a href="#" class="dropdown-link-2 greek w-dropdown-link">Ελληνικά</a><a href="#" class="dropdown-link-2 english w-dropdown-link">English, USA</a><a href="#" class="dropdown-link-2 spanish w-dropdown-link">Español</a><a href="#" class="dropdown-link-2 suomi w-dropdown-link">Suomi</a><a href="#" class="dropdown-link-2 french w-dropdown-link">Français</a><a href="#" class="dropdown-link-2 hindi w-dropdown-link">हिंदी</a><a href="#" class="dropdown-link-2 hrvatski w-dropdown-link">Hrvatski</a><a href="#" class="dropdown-link-2 magyar w-dropdown-link">Magyar</a><a href="#" class="dropdown-link-2 italiano w-dropdown-link">Italiano</a><a href="#" class="dropdown-link-2 japanese w-dropdown-link">日本語</a><a href="#" class="dropdown-link-2 korean w-dropdown-link">한국어</a><a href="#" class="dropdown-link-2 lithuanian w-dropdown-link">Lietuviškai</a><a href="#" class="dropdown-link-2 nederlands w-dropdown-link">Nederlands</a><a href="#" class="dropdown-link-2 norwegian w-dropdown-link">Norwegian</a><a href="#" class="dropdown-link-2 polski w-dropdown-link">Polski</a><a href="#" class="dropdown-link-2 brazilian-portuguese w-dropdown-link">Português do Brasil</a><a href="#" class="dropdown-link-2 romania w-dropdown-link">Română</a><a href="#" class="dropdown-link-2 ru w-dropdown-link">Русский</a><a href="#" class="dropdown-link-2 svenska w-dropdown-link">Svenska</a><a href="#" class="dropdown-link-2 thai w-dropdown-link">ไทย</a><a href="#" class="dropdown-link-2 turkey w-dropdown-link">Türkçe</a><a href="#" class="dropdown-link-2 ua w-dropdown-link">Українська</a><a href="#" class="dropdown-link-2 vietnamese w-dropdown-link">Tiếng Việt</a><a href="#" class="dropdown-link-2 chinese1 w-dropdown-link">中文</a><a href="#" class="dropdown-link-2 chinese w-dropdown-link">繁體中文</a></nav></div><div class="language"><div class="lang-container"><div id="locale-dropdown" class="lang-dropdown-container"><div class="lang-dropdown"></div></div><div class="lang-selector-container"><div class="locale-container"><img src="https://assets-global.website-files.com/plugins/Basic/assets/placeholder.60f9b1840c.svg" alt="" class="flag"/><div class="selector-language-name"></div></div><img src="https://assets-global.website-files.com/6257adef93867e50d84d30e2/6257bee91e6309a5a6f6b994_arrow.svg" loading="lazy" alt="" class="arrow-icon"/></div></div></div><div class="flex-horizontal top-soc"><a data-track="twitter" href="https://twitter.com/discord" target="_blank" class="link-s w-inline-block"><img src="https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/65814ad8d9f0b3d89c08fdad_X.svg" loading="lazy" alt="" class="image-49"/></a><a data-track="instagram" href="https://www.instagram.com/discord/" target="_blank" class="link-s w-inline-block"><img src="https://assets-global.website-files.com/6238e97f6441e30a13a52345/6436b5ef634f834a45100cff_svg4.svg" loading="lazy" alt="" class="image-49"/></a><a data-track="facebook" href="https://www.facebook.com/discord/" target="_blank" class="link-s w-inline-block"><img src="https://assets-global.website-files.com/6238e97f6441e30a13a52345/6436b5ef634f836372100cfc_svg5.svg" loading="lazy" alt="" class="image-49"/></a><a data-track="youtube" href="https://www.youtube.com/discord" target="_blank" class="link-s w-inline-block"><img src="https://assets-global.website-files.com/6238e97f6441e30a13a52345/6436b5ef634f83240a100cfe_svg6.svg" loading="lazy" alt="" class="image-49"/></a><a data-track="Tiktok" href="https://www.tiktok.com/@discord" target="_blank" class="link-s w-inline-block"><img src="https://assets-global.website-files.com/6257adef93867e50d84d30e2/6374a8122d8df285ddea0e9e_Tiktok (1).svg" loading="lazy" alt="" class="image-49"/></a></div></div><div id="w-node-_4154f574-5821-8ddb-f6fc-12aae7b6c8b6-e7b6c85e"><div class="paragraph-small top-marg font-blue">Product</div><a data-track="download" href="../download.html" class="link-footer">Download</a><a data-track="nitro" href="../nitro.html" class="link-footer">Nitro</a><a data-track="status" href="https://discordstatus.com/" class="link-footer">Status</a><a data-track="status" href="../application-directory.html" class="link-footer">App Directory</a><a data-track="status" href="../mobile.html" class="link-footer">New Mobile Experience</a></div><div id="w-node-_4154f574-5821-8ddb-f6fc-12aae7b6c8bf-e7b6c85e"><div class="paragraph-small top-marg font-blue">Company</div><a data-track="about" href="../company.html" class="link-footer">About</a><a data-track="jobs" href="../careers.html" class="link-footer">Jobs</a><a data-track="branding" href="../branding.html" class="link-footer">Brand</a><a data-track="newsroom" href="../newsroom.html" class="link-footer">Newsroom</a><a data-track="newsroom" href="../fallrelease.html" class="link-footer">Fall Release</a></div><div id="w-node-_4154f574-5821-8ddb-f6fc-12aae7b6c8ca-e7b6c85e"><div class="paragraph-small top-marg font-blue">Resources</div><a data-track="college" href="../college.html" class="link-footer">College</a><a data-track="support" href="https://support.discord.com/hc" class="link-footer">Support</a><a data-track="safety" href="../safety.html" class="link-footer">Safety</a><a data-track="blog" href="../blog.html" class="link-footer">Blog</a><a data-track="feedback" href="https://support.discord.com/hc/en-us/community/topics" class="link-footer">Feedback</a><a data-track="streamkit" href="../streamkit.html" class="link-footer">StreamKit</a><a data-track="creators" href="../creators.html" class="link-footer">Creators</a><a data-track="community" href="../community.html" class="link-footer">Community</a><a data-track="Build" href="../build.html" class="link-footer">Developers</a><a data-track="Build" href="../gaming.html" class="link-footer">Gaming</a><a data-track="store" href="https://discordmerch.com/evergreenfooter" class="link-footer">Official 3rd Party Merch</a></div><div id="w-node-_4154f574-5821-8ddb-f6fc-12aae7b6c8e1-e7b6c85e"><div class="paragraph-small top-marg font-blue">Policies</div><a data-track="terms" href="../terms.html" class="link-footer">Terms</a><a data-track="privacy" href="../privacy.html" class="link-footer">Privacy</a><a data-open-cookie-settings="true" href="#" class="link-footer">Cookie Settings</a><a data-track="guidelines" href="../guidelines.html" class="link-footer">Guidelines</a><a data-track="acknowledgement" href="../acknowledgements.html" class="link-footer">Acknowledgements</a><a data-track="licenses" href="../licenses.html" class="link-footer">Licenses</a><a data-track="moderation" href="../safety-library.html" class="link-footer">Moderation</a></div></div><div class="footer-line-blue"><a data-track="logo" href="../index.html" class="w-inline-block"><img src="https://assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/64cb9ed63bb88490555f45a1_Open Source Projects _ Discord-7.svg" loading="lazy" alt="" class="discord-footer"/></a><a data-track="login_footer" href="../app.html" class="button-white color-blue-right footer-open-discord-button footer-open-discord-button-js w-button">Sign up</a></div></div></div><script src="../../d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c84fb4.js?site=5f8dd67f8fdd6f51f0b50904" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script><script src="../../assets-global.website-files.com/5f8dd67f8fdd6f51f0b50904/js/discordpages.790f5716f.js" type="text/javascript"></script><script type="text/javascript" src="../w/loader/loader.js" async defer></script>
+<script src="../webflow-scripts/bodyEnd.js" defer async></script>
+<script>
+  function initDownloadButton() {
+    let userAgent = window.navigator.userAgent,
+        platform = window.navigator.platform,
+        macosPlatforms = ['Macintosh', 'MacIntel', 'MacPPC', 'Mac68K'],
+        windowsPlatforms = ['Win32', 'Win64', 'Windows', 'WinCE'],
+        iosPlatforms = ['iPhone', 'iPad', 'iPod'],
+        buttonAttributes = null;
+
+    if (iosPlatforms.indexOf(platform) !== -1) {
+      buttonAttributes = {
+        text: "Download on the App Store",
+        href: "https://itunes.apple.com/us/app/discord-chat-for-games/id985746746",
+      }
+    } else if (macosPlatforms.indexOf(platform) !== -1) {
+      buttonAttributes = {
+        text: "Download for Mac",
+        href: "https://discord.com/api/download?platform=osx",
+      }
+    } else if (windowsPlatforms.indexOf(platform) !== -1) {
+      buttonAttributes = {
+        text: "Download for Windows",
+        href: "https://discord.com/api/download?platform=win",
+      }
+    } else if (/Android/.test(userAgent)) {
+      buttonAttributes = {
+        text: "Download on Google Play",
+        href: "https://play.google.com/store/apps/details?id=com.discord",
+      }
+    } else if (!os && /Linux/.test(platform)) {
+      buttonAttributes = {
+        text: "Download for Linux",
+        href: "https://discord.com/api/download?platform=linux",
+      }
+    }
+
+	let downloadEl = document.querySelectorAll(".download-button");
+    if (downloadEl) {
+      downloadEl.forEach(function(el) {
+        el.innerText = buttonAttributes.text;
+        el.href = buttonAttributes.href;
+      });
+    }
+
+	let downloadSidebarEl = document.querySelectorAll(".download-sidebar");
+    if (downloadSidebarEl) {
+      downloadSidebarEl.forEach(function(el) {
+        el.href = buttonAttributes.href;
+      });
+    }
+  }
+  
+  function initLogInOrOpenDiscordButton() {
+    let loginButtonText, loginRoute, signUpButtonText, signupRoute;
+    let loginIsOpenDiscordButton = true;
+    const loginLink = '../login.html';
+    const signupLink = '../register.html';
+    const openLink = '../channels/%40me.html';
+    
+    if(window.localStorage.getItem("token") != null) {
+      loginButtonText = "Open Discord";
+      loginRoute = openLink;
+      loginIsOpenDiscordButton = true;
+      
+      signUpButtonText = "Open Discord";
+      signupRoute = openLink;
+    } else {
+      loginIsOpenDiscordButton = false;
+      loginButtonText = "Login";
+      signUpButtonText = "Sign up";
+      loginRoute = loginLink;
+      signupRoute = signupLink;
+    }
+    
+    let loginEl = document.querySelectorAll(".login-button-js");
+    let footerEl = document.querySelectorAll(".footer-open-discord-button-js");
+    if (loginEl && loginEl.length > 0) {
+      loginEl.forEach(function(el) {
+        if (!loginIsOpenDiscordButton) {
+        	el.classList.add('hide-on-mobile');
+        }
+        el.innerText = loginButtonText;
+      	el.href = loginRoute;
+        if (loginIsOpenDiscordButton) {
+            el.dataset.trackNav = 'navbar-open-button';
+        }
+      });
+    }
+    if (footerEl && footerEl.length > 0) {
+      footerEl.forEach(function(el) {
+        if (window.innerWidth <= 768) {
+        	el.innerText = "Download";
+        } else {
+        	el.innerText = signUpButtonText;
+        }
+        el.href = signupRoute;
+      });
+    }
+  }
+  
+  function initSignUpOrOpenButtons() {
+    const signupLink = '../register.html';
+    const openLink = '../channels/%40me.html';
+    const isLoggedIn = window.localStorage.getItem("token") != null;
+    const buttonEl = document.querySelectorAll(".open-or-signup-js");
+    
+    if (buttonEl && buttonEl.length > 0) {
+        buttonEl.forEach(function(el) {
+            if (isLoggedIn) {
+                el.innerText = 'Open Discord';
+                el.href = openLink;
+            } else {
+                el.innerText = 'Sign up';
+                el.href = signupLink;
+            }
+        });
+    }
+  }
+  
+  initSignUpOrOpenButtons();
+  initLogInOrOpenDiscordButton();
+  initDownloadButton();
+</script>
+
+
+<!-- build:inlineScriptNonceTag -->
+  <script>
+  <!-- endbuild -->
+  </script>
+  <!-- section:dataLayer -->
+  <script src="../assets/oneTrust/v4/scripttemplates/otSDKStub.js" type="text/javascript" charset="UTF-8" data-domain-script="04da1d72-0626-4fff-b3c6-150c719cc115"></script>
+  <!-- build:inlineScriptNonceTag -->
+  <script>
+    <!-- endbuild -->
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push({ 'allCookiesOK': false });
+  </script>
+  <!-- endsection -->
+  <!-- section:gtm -->
+  <!-- build:inlineScriptNonceTag -->
+  <script>
+  <!-- endbuild -->
+    (function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          '../../www.googletagmanager.com/gtm5445.html?id=' + i + dl + '&gtm_auth=GI0g9O-54_SitcgmxQKxlA&gtm_preview=env-2&gtm_cookies_win=x'; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-N7BVC2W');
+  </script>
+  <!-- endsection --><script type="application/ld+json">
+{ 
+ "@context": "http://schema.org", 
+ "@type": "BlogPosting",
+ "headline": "Improving Our Mobile Experience",
+ "image": "https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/656a67621c4ba32e7c3710fc_image14.png",
+ "publisher": "Discord",
+ "url": "https://discord.com/blog/improving-our-mobile-experience",
+ "datePublished": "Dec 13, 2023",
+ "dateCreated": "Dec 01, 2023",
+ "dateModified": "Dec 13, 2023",
+ "description": "Starting today, “Discord but smol” gets a fresh set of updates for touch input on the screen that fits in your pocket. Check out everything that’s rolling out to your phone!",
+   "author": {
+    "@type": "Person",
+    "name": "Francesco Polizzi"
+  }
+ }
+</script>
+
+<script nonce="NDUsMjIwLDE4NSwxNDgsMjI5LDEwMCwyNDYsNDc=">(function(){var js = "window['__CF$cv$params']={r:'83f175729c6d5fc6',t:'MTcwNDE4MjMyNi4yMjcwMDA='};_cpo=document.createElement('script');_cpo.nonce='NDUsMjIwLDE4NSwxNDgsMjI5LDEwMCwyNDYsNDc=',_cpo.src='../cdn-cgi/challenge-platform/h/g/scripts/jsd/74bd6362/main.js',document.getElementsByTagName('head')[0].appendChild(_cpo);";var _0xh = document.createElement('iframe');_0xh.height = 1;_0xh.width = 1;_0xh.style.position = 'absolute';_0xh.style.top = 0;_0xh.style.left = 0;_0xh.style.border = 'none';_0xh.style.visibility = 'hidden';document.body.appendChild(_0xh);function handler() {var _0xi = _0xh.contentDocument || _0xh.contentWindow.document;if (_0xi) {var _0xj = _0xi.createElement('script');_0xj.nonce = 'NDUsMjIwLDE4NSwxNDgsMjI5LDEwMCwyNDYsNDc=';_0xj.innerHTML = js;_0xi.getElementsByTagName('head')[0].appendChild(_0xj);}}if (document.readyState !== 'loading') {handler();} else if (window.addEventListener) {document.addEventListener('DOMContentLoaded', handler);} else {var prev = document.onreadystatechange || function () {};document.onreadystatechange = function (e) {prev(e);if (document.readyState !== 'loading') {document.onreadystatechange = prev;handler();}};}})();</script></body>
+<!-- Mirrored from discord.com/blog/improving-our-mobile-experience by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 02 Jan 2024 08:09:00 GMT -->
+</html>
